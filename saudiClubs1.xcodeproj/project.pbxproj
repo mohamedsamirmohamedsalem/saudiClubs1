@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6012CC2A238D502200DEB61E /* ResetPasswordViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */; };
+		601342A2238D44B900B8560C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601342A1238D44B900B8560C /* SignUpViewController.swift */; };
+		6017B594238D7528007DC459 /* ResetPasswordViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */; };
 		60318E52238D17ED00F2C3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E51238D17ED00F2C3AB /* AppDelegate.swift */; };
 		60318E54238D17ED00F2C3AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E53238D17ED00F2C3AB /* SceneDelegate.swift */; };
-		60318E56238D17ED00F2C3AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E55238D17ED00F2C3AB /* ViewController.swift */; };
+		60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E55238D17ED00F2C3AB /* SplashViewController.swift */; };
 		60318E59238D17ED00F2C3AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60318E57238D17ED00F2C3AB /* Main.storyboard */; };
 		60318E5B238D17EF00F2C3AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60318E5A238D17EF00F2C3AB /* Assets.xcassets */; };
 		60318E5E238D17EF00F2C3AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60318E5C238D17EF00F2C3AB /* LaunchScreen.storyboard */; };
+		60318E6A238D19C900F2C3AB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E69238D19C900F2C3AB /* LoginViewController.swift */; };
+		60318E77238D1EA800F2C3AB /* ButtonCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E6D238D1EA800F2C3AB /* ButtonCorners.swift */; };
+		60318E78238D1EA800F2C3AB /* ImageCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E6E238D1EA800F2C3AB /* ImageCorners.swift */; };
+		60318E79238D1EA800F2C3AB /* LabelCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E6F238D1EA800F2C3AB /* LabelCorners.swift */; };
+		60318E7A238D1EA800F2C3AB /* TableViewCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E70238D1EA800F2C3AB /* TableViewCorners.swift */; };
+		60318E7B238D1EA800F2C3AB /* TextFieldCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E71238D1EA800F2C3AB /* TextFieldCorners.swift */; };
+		60318E7C238D1EA800F2C3AB /* ViewCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E72238D1EA800F2C3AB /* ViewCorners.swift */; };
+		60318E7D238D1EA800F2C3AB /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E74238D1EA800F2C3AB /* ButtonAnimation.swift */; };
+		60318E7E238D1EA800F2C3AB /* TextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E75238D1EA800F2C3AB /* TextFieldPadding.swift */; };
+		60318E7F238D1EA800F2C3AB /* TextFiledAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E76238D1EA800F2C3AB /* TextFiledAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController1.swift; sourceTree = "<group>"; };
+		601342A1238D44B900B8560C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController2.swift; sourceTree = "<group>"; };
 		60318E4E238D17ED00F2C3AB /* saudiClubs1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saudiClubs1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60318E51238D17ED00F2C3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60318E53238D17ED00F2C3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60318E55238D17ED00F2C3AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60318E55238D17ED00F2C3AB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		60318E58238D17ED00F2C3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60318E5A238D17EF00F2C3AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60318E5D238D17EF00F2C3AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60318E5F238D17EF00F2C3AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60318E69238D19C900F2C3AB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		60318E6D238D1EA800F2C3AB /* ButtonCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCorners.swift; sourceTree = "<group>"; };
+		60318E6E238D1EA800F2C3AB /* ImageCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCorners.swift; sourceTree = "<group>"; };
+		60318E6F238D1EA800F2C3AB /* LabelCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCorners.swift; sourceTree = "<group>"; };
+		60318E70238D1EA800F2C3AB /* TableViewCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCorners.swift; sourceTree = "<group>"; };
+		60318E71238D1EA800F2C3AB /* TextFieldCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCorners.swift; sourceTree = "<group>"; };
+		60318E72238D1EA800F2C3AB /* ViewCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCorners.swift; sourceTree = "<group>"; };
+		60318E74238D1EA800F2C3AB /* ButtonAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		60318E75238D1EA800F2C3AB /* TextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldPadding.swift; sourceTree = "<group>"; };
+		60318E76238D1EA800F2C3AB /* TextFiledAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFiledAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,84 @@
 		60318E50238D17ED00F2C3AB /* saudiClubs1 */ = {
 			isa = PBXGroup;
 			children = (
+				60318E68238D181A00F2C3AB /* Supporting Files */,
+				60318E6B238D1EA800F2C3AB /* Layout */,
+				60318E67238D180700F2C3AB /* Model */,
+				60318E66238D180200F2C3AB /* View */,
+				60318E65238D17FF00F2C3AB /* Controller */,
+			);
+			path = saudiClubs1;
+			sourceTree = "<group>";
+		};
+		60318E65238D17FF00F2C3AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60318E55238D17ED00F2C3AB /* SplashViewController.swift */,
+				60318E69238D19C900F2C3AB /* LoginViewController.swift */,
+				601342A1238D44B900B8560C /* SignUpViewController.swift */,
+				6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */,
+				6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60318E66238D180200F2C3AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60318E57238D17ED00F2C3AB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60318E67238D180700F2C3AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60318E68238D181A00F2C3AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				60318E51238D17ED00F2C3AB /* AppDelegate.swift */,
 				60318E53238D17ED00F2C3AB /* SceneDelegate.swift */,
-				60318E55238D17ED00F2C3AB /* ViewController.swift */,
-				60318E57238D17ED00F2C3AB /* Main.storyboard */,
 				60318E5A238D17EF00F2C3AB /* Assets.xcassets */,
 				60318E5C238D17EF00F2C3AB /* LaunchScreen.storyboard */,
 				60318E5F238D17EF00F2C3AB /* Info.plist */,
 			);
-			path = saudiClubs1;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60318E6B238D1EA800F2C3AB /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				60318E6C238D1EA800F2C3AB /* Classes */,
+				60318E73238D1EA800F2C3AB /* Extensions */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		60318E6C238D1EA800F2C3AB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60318E6D238D1EA800F2C3AB /* ButtonCorners.swift */,
+				60318E6E238D1EA800F2C3AB /* ImageCorners.swift */,
+				60318E6F238D1EA800F2C3AB /* LabelCorners.swift */,
+				60318E70238D1EA800F2C3AB /* TableViewCorners.swift */,
+				60318E71238D1EA800F2C3AB /* TextFieldCorners.swift */,
+				60318E72238D1EA800F2C3AB /* ViewCorners.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		60318E73238D1EA800F2C3AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60318E74238D1EA800F2C3AB /* ButtonAnimation.swift */,
+				60318E75238D1EA800F2C3AB /* TextFieldPadding.swift */,
+				60318E76238D1EA800F2C3AB /* TextFiledAnimation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +233,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60318E56238D17ED00F2C3AB /* ViewController.swift in Sources */,
+				60318E7F238D1EA800F2C3AB /* TextFiledAnimation.swift in Sources */,
+				60318E7A238D1EA800F2C3AB /* TableViewCorners.swift in Sources */,
+				60318E7D238D1EA800F2C3AB /* ButtonAnimation.swift in Sources */,
+				60318E6A238D19C900F2C3AB /* LoginViewController.swift in Sources */,
+				6017B594238D7528007DC459 /* ResetPasswordViewController2.swift in Sources */,
+				60318E7B238D1EA800F2C3AB /* TextFieldCorners.swift in Sources */,
+				60318E7C238D1EA800F2C3AB /* ViewCorners.swift in Sources */,
+				60318E77238D1EA800F2C3AB /* ButtonCorners.swift in Sources */,
+				60318E79238D1EA800F2C3AB /* LabelCorners.swift in Sources */,
+				601342A2238D44B900B8560C /* SignUpViewController.swift in Sources */,
+				60318E78238D1EA800F2C3AB /* ImageCorners.swift in Sources */,
+				60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */,
+				60318E7E238D1EA800F2C3AB /* TextFieldPadding.swift in Sources */,
+				6012CC2A238D502200DEB61E /* ResetPasswordViewController1.swift in Sources */,
 				60318E52238D17ED00F2C3AB /* AppDelegate.swift in Sources */,
 				60318E54238D17ED00F2C3AB /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A3GDCJZQY;
-				INFOPLIST_FILE = saudiClubs1/Info.plist;
+				INFOPLIST_FILE = "saudiClubs1/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A3GDCJZQY;
-				INFOPLIST_FILE = saudiClubs1/Info.plist;
+				INFOPLIST_FILE = "saudiClubs1/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
