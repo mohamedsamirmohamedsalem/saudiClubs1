@@ -11,6 +11,7 @@ import UIKit
 class selectPaymentViewController: UIViewController {
     
     private var selectedPaymentMethod : String?
+    
     @IBOutlet var rightView: ViewCorners!
     @IBOutlet var leftView: ViewCorners!
     override func viewDidLoad() {
@@ -38,7 +39,12 @@ class selectPaymentViewController: UIViewController {
     @IBAction func completeBut(_ sender: UIButton) {
         performSegue(withIdentifier: "completePaymentViewController", sender: self)
     }
-   
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "completePaymentViewController"{
+            if let destinationViewController = segue.destination as? completePaymentViewController {
+                destinationViewController.selectedPaymentMethod = selectedPaymentMethod
+            }
+        }
+    }
     
 }
