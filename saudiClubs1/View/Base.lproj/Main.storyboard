@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K7w-PC-VOm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vft-u5-Abo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -632,8 +632,364 @@
             </objects>
             <point key="canvasLocation" x="3509" y="124"/>
         </scene>
+        <!--Reset Password View Controller3-->
+        <scene sceneID="uPf-CP-7QG">
+            <objects>
+                <viewController storyboardIdentifier="ResetPasswordViewController3" id="waX-KC-cIv" customClass="ResetPasswordViewController3" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FvC-lw-WCc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOG-UJ-Dx2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تسجيل الدخول" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tja-7G-xIj">
+                                        <rect key="frame" x="162" y="25" width="90.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="aWy-bO-Oky"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-4u-cib" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="60" width="384" height="701"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-bo-kOB">
+                                                <rect key="frame" x="40" y="464" width="304" height="168"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="rnX-7I-ATy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="92"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمه المرور الجديدة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDB-9g-FZj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="28"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="28" id="dFq-bN-xYd"/>
+                                                                </constraints>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-wp-UTs">
+                                                                <rect key="frame" x="0.0" y="64" width="304" height="28"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="28" id="uiC-V2-t7A"/>
+                                                                </constraints>
+                                                                <string key="placeholder">اعادة كلمة المرور الجديدة
+</string>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0n-Z9-VhI" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="122" width="304" height="46"/>
+                                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="46" id="4Cf-fH-XQF"/>
+                                                        </constraints>
+                                                        <state key="normal" title="حفظ">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="RHF-4J-9Py">
+                                                <rect key="frame" x="44.5" y="30" width="295.5" height="243"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="asK-wf-m7P">
+                                                        <rect key="frame" x="58.5" y="0.0" width="178" height="160"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="160" id="H9v-R8-oER"/>
+                                                            <constraint firstAttribute="width" constant="178" id="sRw-R2-2Xw"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUR-vi-dYX">
+                                                        <rect key="frame" x="0.0" y="187" width="295.5" height="56"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56" id="guO-i0-DvF"/>
+                                                        </constraints>
+                                                        <string key="text">ادخل بريدك الالكتروني لاسترجاع كلمة المرور 
+الخاصة بك</string>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="MgZ-bo-kOB" firstAttribute="leading" secondItem="zrK-4u-cib" secondAttribute="leading" constant="40" id="SRC-iL-2kH"/>
+                                            <constraint firstAttribute="trailing" secondItem="MgZ-bo-kOB" secondAttribute="trailing" constant="40" id="bWn-QV-EkN"/>
+                                            <constraint firstAttribute="bottom" secondItem="MgZ-bo-kOB" secondAttribute="bottom" constant="69" id="eg3-Zj-zIC"/>
+                                            <constraint firstItem="RHF-4J-9Py" firstAttribute="centerX" secondItem="zrK-4u-cib" secondAttribute="centerX" id="hM8-oK-Gzg"/>
+                                            <constraint firstItem="RHF-4J-9Py" firstAttribute="top" secondItem="zrK-4u-cib" secondAttribute="top" constant="30" id="z4u-ca-gYk"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="6c8-xi-SNP">
+                                        <rect key="frame" x="28" y="783" width="371" height="15"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kk-Wf-isN">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="15"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="تسجيل حساب جديد">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn6-n4-wtl">
+                                                <rect key="frame" x="255" y="0.0" width="116" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Ovs-sR-Axp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title=" الدخول كزائر   ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zrK-4u-cib" secondAttribute="bottom" constant="57" id="4PV-SK-14l"/>
+                                    <constraint firstItem="Tja-7G-xIj" firstAttribute="centerX" secondItem="bOG-UJ-Dx2" secondAttribute="centerX" id="Bhs-vo-Lgt"/>
+                                    <constraint firstItem="6c8-xi-SNP" firstAttribute="trailing" secondItem="zrK-4u-cib" secondAttribute="trailing" id="Gim-5o-qy3"/>
+                                    <constraint firstItem="zrK-4u-cib" firstAttribute="leading" secondItem="bOG-UJ-Dx2" secondAttribute="leading" constant="15" id="PJO-kt-CKE"/>
+                                    <constraint firstItem="Tja-7G-xIj" firstAttribute="top" secondItem="bOG-UJ-Dx2" secondAttribute="top" constant="25" id="U6O-uU-U0l"/>
+                                    <constraint firstAttribute="bottom" secondItem="6c8-xi-SNP" secondAttribute="bottom" constant="20" id="d8n-sT-QoL"/>
+                                    <constraint firstItem="6c8-xi-SNP" firstAttribute="leading" secondItem="bOG-UJ-Dx2" secondAttribute="leading" constant="28" id="dUy-Y5-WlL"/>
+                                    <constraint firstAttribute="trailing" secondItem="zrK-4u-cib" secondAttribute="trailing" constant="15" id="v8M-Ms-oTo"/>
+                                    <constraint firstItem="zrK-4u-cib" firstAttribute="top" secondItem="Tja-7G-xIj" secondAttribute="bottom" constant="15" id="zZu-Rl-EaF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bOG-UJ-Dx2" firstAttribute="leading" secondItem="Kvh-A5-UhX" secondAttribute="leading" id="BI1-D4-GBg"/>
+                            <constraint firstItem="bOG-UJ-Dx2" firstAttribute="top" secondItem="Kvh-A5-UhX" secondAttribute="top" id="fRW-MJ-ThA"/>
+                            <constraint firstItem="bOG-UJ-Dx2" firstAttribute="bottom" secondItem="Kvh-A5-UhX" secondAttribute="bottom" id="qrz-bA-50o"/>
+                            <constraint firstItem="bOG-UJ-Dx2" firstAttribute="trailing" secondItem="Kvh-A5-UhX" secondAttribute="trailing" id="uiN-Df-QL8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kvh-A5-UhX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0c1-v9-nST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4223" y="124"/>
+        </scene>
+        <!--Select Payment View Controller-->
+        <scene sceneID="rkV-rs-7ed">
+            <objects>
+                <viewController storyboardIdentifier="selectPaymentViewController" id="vft-u5-Abo" customClass="selectPaymentViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dnv-ck-gdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-2K-HPv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شراء عضوية  التطبيق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdF-Nu-MuS">
+                                        <rect key="frame" x="144.5" y="25" width="125.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="s8j-2F-SOB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Ref-Jg-8ka">
+                                        <rect key="frame" x="28" y="783" width="371" height="15"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEk-kb-guU">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="15"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="تسجيل حساب جديد">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3w-rL-XNo">
+                                                <rect key="frame" x="255" y="0.0" width="116" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Hij-WG-Suf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title=" الدخول كزائر   ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-VL-zie" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="60" width="384" height="701"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-xh-4DF">
+                                                <rect key="frame" x="20.5" y="20" width="343.5" height="314"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V5M-lR-F0q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343.5" height="251"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment-icon" translatesAutoresizingMaskIntoConstraints="NO" id="cDD-eb-2DJ">
+                                                                <rect key="frame" x="106.5" y="0.0" width="130" height="130"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="130" id="2PK-ga-jvR"/>
+                                                                    <constraint firstAttribute="width" constant="130" id="jJM-xf-xZH"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1s-0H-Qa7">
+                                                                <rect key="frame" x="0.0" y="160" width="343.5" height="91"/>
+                                                                <string key="text">قم بشراء عضويتك في تطبيق اندية السعودية
+ وتمتع بمتابعة آخر اخبار ناديك المفضل
+ والمباريات ومجموعة من الجوائز القيمة
+ داخل كل اندية المملكة
+</string>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grv-RZ-Tb5">
+                                                        <rect key="frame" x="0.0" y="291" width="343.5" height="23"/>
+                                                        <string key="text">“ اختر طريقة الدفع المناسبة “
+</string>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                        <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8VA-8S-95Y">
+                                                <rect key="frame" x="30" y="401" width="324" height="280"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYv-wQ-P3Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="evJ-ec-sLa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23a-FB-jfz" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="200"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8SA-Nt-n9C">
+                                                                                <rect key="frame" x="30" y="30" width="87" height="140"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="NmM-ad-sxE">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="89.5"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="تحويل بنكي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY1-6l-06k">
+                                                                                        <rect key="frame" x="0.0" y="119.5" width="87" height="20.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="8SA-Nt-n9C" firstAttribute="leading" secondItem="23a-FB-jfz" secondAttribute="leading" constant="30" id="P62-DI-VFJ"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="8SA-Nt-n9C" secondAttribute="trailing" constant="30" id="b5x-UH-OoQ"/>
+                                                                            <constraint firstItem="8SA-Nt-n9C" firstAttribute="top" secondItem="23a-FB-jfz" secondAttribute="top" constant="30" id="gge-If-4IH"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="8SA-Nt-n9C" secondAttribute="bottom" constant="30" id="r6H-1f-Clj"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-1v-aS5" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                                        <rect key="frame" x="177" y="0.0" width="147" height="200"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="djv-yn-MfX">
+                                                                                <rect key="frame" x="30" y="30" width="87" height="140"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sms" translatesAutoresizingMaskIntoConstraints="NO" id="pXq-Vu-atE">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="89.5"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="رسالة نصية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIA-PD-dG3">
+                                                                                        <rect key="frame" x="0.0" y="119.5" width="87" height="20.5"/>
+                                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="djv-yn-MfX" secondAttribute="bottom" constant="30" id="C0q-iG-F8t"/>
+                                                                            <constraint firstItem="djv-yn-MfX" firstAttribute="leading" secondItem="fiM-1v-aS5" secondAttribute="leading" constant="30" id="P3E-UW-BTr"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="djv-yn-MfX" secondAttribute="trailing" constant="30" id="QfR-Kj-w1o"/>
+                                                                            <constraint firstItem="djv-yn-MfX" firstAttribute="top" secondItem="fiM-1v-aS5" secondAttribute="top" constant="30" id="efQ-oL-JWK"/>
+                                                                            <constraint firstAttribute="height" constant="200" id="shn-k4-u6J"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="evJ-ec-sLa" firstAttribute="leading" secondItem="pYv-wQ-P3Q" secondAttribute="leading" id="Afa-Y2-dIp"/>
+                                                            <constraint firstItem="evJ-ec-sLa" firstAttribute="top" secondItem="pYv-wQ-P3Q" secondAttribute="top" id="Q2h-LR-j4h"/>
+                                                            <constraint firstAttribute="bottom" secondItem="evJ-ec-sLa" secondAttribute="bottom" id="U8N-bG-yuW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="evJ-ec-sLa" secondAttribute="trailing" id="aZH-Ab-EGV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFw-XG-TIg" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="230" width="324" height="50"/>
+                                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="dPl-4Z-RKT"/>
+                                                        </constraints>
+                                                        <state key="normal" title="استكمال">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="8VA-8S-95Y" secondAttribute="bottom" constant="20" id="0yQ-tu-LWQ"/>
+                                            <constraint firstItem="lS3-xh-4DF" firstAttribute="top" secondItem="SAD-VL-zie" secondAttribute="top" constant="20" id="72U-CH-99W"/>
+                                            <constraint firstItem="8VA-8S-95Y" firstAttribute="leading" secondItem="SAD-VL-zie" secondAttribute="leading" constant="30" id="Akv-hB-pSX"/>
+                                            <constraint firstAttribute="trailing" secondItem="8VA-8S-95Y" secondAttribute="trailing" constant="30" id="eWu-5S-mQZ"/>
+                                            <constraint firstItem="lS3-xh-4DF" firstAttribute="centerX" secondItem="SAD-VL-zie" secondAttribute="centerX" id="qkz-0a-mhq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SAD-VL-zie" firstAttribute="top" secondItem="BdF-Nu-MuS" secondAttribute="bottom" constant="15" id="04e-Rs-9Sm"/>
+                                    <constraint firstAttribute="bottom" secondItem="SAD-VL-zie" secondAttribute="bottom" constant="57" id="TkS-Nn-s4c"/>
+                                    <constraint firstItem="Ref-Jg-8ka" firstAttribute="leading" secondItem="hEj-2K-HPv" secondAttribute="leading" constant="28" id="U44-dY-8CD"/>
+                                    <constraint firstItem="BdF-Nu-MuS" firstAttribute="top" secondItem="hEj-2K-HPv" secondAttribute="top" constant="25" id="VrZ-Lo-3l9"/>
+                                    <constraint firstAttribute="trailing" secondItem="SAD-VL-zie" secondAttribute="trailing" constant="15" id="ZSr-oC-IKL"/>
+                                    <constraint firstItem="SAD-VL-zie" firstAttribute="leading" secondItem="hEj-2K-HPv" secondAttribute="leading" constant="15" id="ZZO-96-dnN"/>
+                                    <constraint firstItem="Ref-Jg-8ka" firstAttribute="trailing" secondItem="SAD-VL-zie" secondAttribute="trailing" id="cn4-2E-J9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ref-Jg-8ka" secondAttribute="bottom" constant="20" id="edP-x5-WbN"/>
+                                    <constraint firstItem="BdF-Nu-MuS" firstAttribute="centerX" secondItem="hEj-2K-HPv" secondAttribute="centerX" id="kQb-N3-b9c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hEj-2K-HPv" firstAttribute="trailing" secondItem="beI-VJ-lW5" secondAttribute="trailing" id="oCz-Ur-9LI"/>
+                            <constraint firstItem="hEj-2K-HPv" firstAttribute="top" secondItem="beI-VJ-lW5" secondAttribute="top" id="obO-OF-7op"/>
+                            <constraint firstItem="hEj-2K-HPv" firstAttribute="bottom" secondItem="beI-VJ-lW5" secondAttribute="bottom" id="rRD-kc-tWM"/>
+                            <constraint firstItem="hEj-2K-HPv" firstAttribute="leading" secondItem="beI-VJ-lW5" secondAttribute="leading" id="voc-QF-yQe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="beI-VJ-lW5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8h1-Ts-pXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4942.0289855072469" y="123.88392857142857"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bank" width="67" height="66"/>
+        <image name="payment-icon" width="108" height="109"/>
+        <image name="sms" width="66" height="66"/>
         <image name="splash_logo" width="178" height="160"/>
     </resources>
 </document>
