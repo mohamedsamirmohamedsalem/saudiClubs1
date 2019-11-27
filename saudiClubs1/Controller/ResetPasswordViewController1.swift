@@ -35,6 +35,9 @@ class ResetPasswordViewController1: UIViewController {
         }
     }
     
+    @IBAction func signUpBut(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     //MArk :- Methods
     
     //to check for validation of email

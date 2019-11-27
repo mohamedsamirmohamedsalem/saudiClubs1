@@ -39,6 +39,9 @@ class SignUpViewController: UIViewController {
             
             if !(email.isEmpty || phone.isEmpty || name.isEmpty || password.isEmpty || confirmPassword.isEmpty) &&  password == confirmPassword && SignUpViewController.isValidEmail(emailStr: email){
                 print("sign up success")
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil
+                ).instantiateViewController(identifier: "ResetPasswordViewController1") as! ResetPasswordViewController1
+                present(storyBoard, animated: true, completion: nil)
                 
             }else{
             if name.isEmpty {
@@ -61,6 +64,7 @@ class SignUpViewController: UIViewController {
         }
     }
     @IBAction func haveAnAccount(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     //MARK :- methods

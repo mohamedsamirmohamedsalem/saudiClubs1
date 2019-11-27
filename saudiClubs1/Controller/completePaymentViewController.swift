@@ -9,13 +9,14 @@
 import UIKit
 
 class completePaymentViewController: UIViewController {
+    
+    private var selectedPaymentMethod : String?
+    
     @IBOutlet var dashedView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dashedView.addDashedBorder()
-
- 
     }
 
 }

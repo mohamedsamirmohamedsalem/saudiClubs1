@@ -10,6 +10,8 @@ import UIKit
 
 class ResetPasswordViewController2: UIViewController {
 
+    @IBOutlet var codeTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +19,21 @@ class ResetPasswordViewController2: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - IBActions
+ 
+    @IBAction func completeBut(_ sender: UIButton) {
+        if let code = codeTF.text {
+            if code.isEmpty {
+                codeTF.shake()
+            }else{
+                let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ResetPasswordViewController3") as! ResetPasswordViewController3
+                present(storyBoard, animated: true, completion: nil)
+            }
+        }
     }
-    */
-
+    @IBAction func signUpBut(_ sender: UIButton) {
+        presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
 }

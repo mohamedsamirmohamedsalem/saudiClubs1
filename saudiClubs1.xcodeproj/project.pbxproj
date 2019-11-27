@@ -30,9 +30,12 @@
 		60318E7E238D1EA800F2C3AB /* TextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E75238D1EA800F2C3AB /* TextFieldPadding.swift */; };
 		60318E7F238D1EA800F2C3AB /* TextFiledAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E76238D1EA800F2C3AB /* TextFiledAnimation.swift */; };
 		6096EAC4238EA43B00C9B1FA /* ViewDashedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096EAC3238EA43B00C9B1FA /* ViewDashedBorder.swift */; };
+		D2B1AF755F0B605E37B2CD61 /* Pods_saudiClubs1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4AA8C466FE102FB5973B6D /* Pods_saudiClubs1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D04E5563854AFEB7DC1F44E /* Pods-saudiClubs1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saudiClubs1.debug.xcconfig"; path = "Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF87B1CADA54B7C4054A730 /* Pods-saudiClubs1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saudiClubs1.release.xcconfig"; path = "Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1.release.xcconfig"; sourceTree = "<group>"; };
 		6011CA4B238E995B00EDDDEC /* completePaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = completePaymentViewController.swift; sourceTree = "<group>"; };
 		6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController1.swift; sourceTree = "<group>"; };
 		601342A1238D44B900B8560C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		60318E75238D1EA800F2C3AB /* TextFieldPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldPadding.swift; sourceTree = "<group>"; };
 		60318E76238D1EA800F2C3AB /* TextFiledAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFiledAnimation.swift; sourceTree = "<group>"; };
 		6096EAC3238EA43B00C9B1FA /* ViewDashedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDashedBorder.swift; sourceTree = "<group>"; };
+		FE4AA8C466FE102FB5973B6D /* Pods_saudiClubs1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_saudiClubs1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B1AF755F0B605E37B2CD61 /* Pods_saudiClubs1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,8 @@
 			children = (
 				60318E50238D17ED00F2C3AB /* saudiClubs1 */,
 				60318E4F238D17ED00F2C3AB /* Products */,
+				C3751E47EA43BF0201249A22 /* Pods */,
+				EC00478021884F09D70DFB3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +181,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C3751E47EA43BF0201249A22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D04E5563854AFEB7DC1F44E /* Pods-saudiClubs1.debug.xcconfig */,
+				5BF87B1CADA54B7C4054A730 /* Pods-saudiClubs1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC00478021884F09D70DFB3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE4AA8C466FE102FB5973B6D /* Pods_saudiClubs1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60318E62238D17EF00F2C3AB /* Build configuration list for PBXNativeTarget "saudiClubs1" */;
 			buildPhases = (
+				6131930F1C714EBD74733365 /* [CP] Check Pods Manifest.lock */,
 				60318E4A238D17ED00F2C3AB /* Sources */,
 				60318E4B238D17ED00F2C3AB /* Frameworks */,
 				60318E4C238D17ED00F2C3AB /* Resources */,
+				086C2265826C974F7E5E3126 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +266,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		086C2265826C974F7E5E3126 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6131930F1C714EBD74733365 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-saudiClubs1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60318E4A238D17ED00F2C3AB /* Sources */ = {
@@ -406,6 +475,7 @@
 		};
 		60318E63238D17EF00F2C3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D04E5563854AFEB7DC1F44E /* Pods-saudiClubs1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +494,7 @@
 		};
 		60318E64238D17EF00F2C3AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF87B1CADA54B7C4054A730 /* Pods-saudiClubs1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,12 +9,17 @@
 import UIKit
 
 class SplashViewController : UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.goToLoginViewController()
+        }
     }
-
-
+    
+    func goToLoginViewController(){
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+        self.present(storyBoard, animated: true, completion: nil)
+    }
 }
 
