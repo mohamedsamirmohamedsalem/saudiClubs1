@@ -48,14 +48,12 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
     @IBAction func signUpButtton(_ sender: UIButton) {
         let stroyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
         present(stroyBoard, animated: true, completion: nil)
     }
     @IBAction func logInAsVisitors(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
+        present(storyBoard, animated: true, completion: nil)
     }
-    
-   
- 
 }
