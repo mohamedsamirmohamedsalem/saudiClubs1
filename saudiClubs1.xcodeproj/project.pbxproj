@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		6017B594238D7528007DC459 /* ResetPasswordViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */; };
 		6018E9EB238E5D3C00223203 /* ResetPasswordViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6018E9EA238E5D3C00223203 /* ResetPasswordViewController3.swift */; };
 		6018E9ED238E64B500223203 /* selectPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6018E9EC238E64B500223203 /* selectPaymentViewController.swift */; };
+		6019F198238FAC2C005BE346 /* TextFieldUnderlined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019F197238FAC2C005BE346 /* TextFieldUnderlined.swift */; };
 		60318E52238D17ED00F2C3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E51238D17ED00F2C3AB /* AppDelegate.swift */; };
 		60318E54238D17ED00F2C3AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E53238D17ED00F2C3AB /* SceneDelegate.swift */; };
 		60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E55238D17ED00F2C3AB /* SplashViewController.swift */; };
@@ -42,6 +43,7 @@
 		6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController2.swift; sourceTree = "<group>"; };
 		6018E9EA238E5D3C00223203 /* ResetPasswordViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController3.swift; sourceTree = "<group>"; };
 		6018E9EC238E64B500223203 /* selectPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectPaymentViewController.swift; sourceTree = "<group>"; };
+		6019F197238FAC2C005BE346 /* TextFieldUnderlined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldUnderlined.swift; sourceTree = "<group>"; };
 		60318E4E238D17ED00F2C3AB /* saudiClubs1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saudiClubs1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60318E51238D17ED00F2C3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60318E53238D17ED00F2C3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6019F195238FAA38005BE346 /* User System */ = {
+			isa = PBXGroup;
+			children = (
+				60318E55238D17ED00F2C3AB /* SplashViewController.swift */,
+				60318E69238D19C900F2C3AB /* LoginViewController.swift */,
+				601342A1238D44B900B8560C /* SignUpViewController.swift */,
+				6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */,
+				6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */,
+				6018E9EA238E5D3C00223203 /* ResetPasswordViewController3.swift */,
+			);
+			path = "User System";
+			sourceTree = "<group>";
+		};
+		6019F196238FAA47005BE346 /* Payement */ = {
+			isa = PBXGroup;
+			children = (
+				6018E9EC238E64B500223203 /* selectPaymentViewController.swift */,
+				6011CA4B238E995B00EDDDEC /* completePaymentViewController.swift */,
+			);
+			path = Payement;
+			sourceTree = "<group>";
+		};
 		60318E45238D17ED00F2C3AB = {
 			isa = PBXGroup;
 			children = (
@@ -109,14 +133,8 @@
 		60318E65238D17FF00F2C3AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				60318E55238D17ED00F2C3AB /* SplashViewController.swift */,
-				60318E69238D19C900F2C3AB /* LoginViewController.swift */,
-				601342A1238D44B900B8560C /* SignUpViewController.swift */,
-				6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */,
-				6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */,
-				6018E9EA238E5D3C00223203 /* ResetPasswordViewController3.swift */,
-				6018E9EC238E64B500223203 /* selectPaymentViewController.swift */,
-				6011CA4B238E995B00EDDDEC /* completePaymentViewController.swift */,
+				6019F195238FAA38005BE346 /* User System */,
+				6019F196238FAA47005BE346 /* Payement */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +195,7 @@
 				60318E75238D1EA800F2C3AB /* TextFieldPadding.swift */,
 				60318E76238D1EA800F2C3AB /* TextFiledAnimation.swift */,
 				6096EAC3238EA43B00C9B1FA /* ViewDashedBorder.swift */,
+				6019F197238FAC2C005BE346 /* TextFieldUnderlined.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,7 +206,6 @@
 				0D04E5563854AFEB7DC1F44E /* Pods-saudiClubs1.debug.xcconfig */,
 				5BF87B1CADA54B7C4054A730 /* Pods-saudiClubs1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -331,6 +349,7 @@
 				60318E78238D1EA800F2C3AB /* ImageCorners.swift in Sources */,
 				60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */,
 				60318E7E238D1EA800F2C3AB /* TextFieldPadding.swift in Sources */,
+				6019F198238FAC2C005BE346 /* TextFieldUnderlined.swift in Sources */,
 				6012CC2A238D502200DEB61E /* ResetPasswordViewController1.swift in Sources */,
 				60318E52238D17ED00F2C3AB /* AppDelegate.swift in Sources */,
 				60318E54238D17ED00F2C3AB /* SceneDelegate.swift in Sources */,

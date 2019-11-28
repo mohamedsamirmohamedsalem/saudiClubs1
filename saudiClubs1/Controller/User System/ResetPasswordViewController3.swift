@@ -18,7 +18,10 @@ class ResetPasswordViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+       
+        NewPasswordTF.underlined()
+        confirmNewPasswordTF.underlined()
+       
     }
     
     

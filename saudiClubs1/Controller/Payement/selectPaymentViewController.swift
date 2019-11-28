@@ -22,7 +22,7 @@ class selectPaymentViewController: UIViewController {
     
     @IBAction func payBySendMessageBut(_ sender: UIButton) {
         selectedPaymentMethod = "sms"
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 1.2) {
             self.rightView.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
             self.leftView.backgroundColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
             }
@@ -30,7 +30,7 @@ class selectPaymentViewController: UIViewController {
 
     @IBAction func payThroughBank(_ sender: UIButton) {
          selectedPaymentMethod = "bank"
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 1.2) {
             self.rightView.backgroundColor = #colorLiteral(red: 0.9411764706, green: 0.9411764706, blue: 0.9411764706, alpha: 1)
             self.leftView.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         }
