@@ -33,8 +33,13 @@ class ResetPasswordViewController3: UIViewController {
                 confirmNewPasswordTF.shake()
             }else if newpassword.isEmpty{
                 NewPasswordTF.shake()
-            }else if confirmNewPassword.isEmpty  || newpassword != confirmNewPassword {
+            }else if confirmNewPassword.isEmpty {
                 confirmNewPasswordTF.shake()
+            }else if newpassword != confirmNewPassword {
+                let alert = UIAlertController(title: "Warnning", message: "passwords are not matche", preferredStyle: .alert)
+                                  let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                                  alert.addAction(action)
+                                  self.present(alert, animated: true, completion: nil)
             }else{
                   let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "selectPaymentViewController") as! selectPaymentViewController
                              present(storyBoard, animated: true, completion: nil)

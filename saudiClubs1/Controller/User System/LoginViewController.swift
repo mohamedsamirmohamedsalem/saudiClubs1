@@ -13,7 +13,6 @@ class LoginViewController: UIViewController {
     //Mark :- IBOutlets
     @IBOutlet var phoneNumberTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
-    @IBOutlet var passwordView: UIView!
     
     
     override func viewDidLoad() {

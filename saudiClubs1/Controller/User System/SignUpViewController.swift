@@ -51,14 +51,24 @@ class SignUpViewController: UIViewController {
             if name.isEmpty {
                 nameTF.shake()
             }
-            else if email.isEmpty || !SignUpViewController.isValidEmail(emailStr: email){
+            else if email.isEmpty{
                 emailTF.shake()
             }else if password.isEmpty{
                 passwordTF.shake()
-            }else if confirmPassword.isEmpty || password != confirmPassword {
+            }else if confirmPassword.isEmpty{
                 ConfirmPasswordTF.shake()
             }else if phone.isEmpty {
                 phoneTF.shake()
+            }else if !SignUpViewController.isValidEmail(emailStr: email){
+                let alert = UIAlertController(title: "Warnning", message: "Email not Valid", preferredStyle: .alert)
+                                  let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                                  alert.addAction(action)
+                                  self.present(alert, animated: true, completion: nil)
+            }else if password != confirmPassword {
+                let alert = UIAlertController(title: "Warnning", message: "passwords are not matche", preferredStyle: .alert)
+                                  let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                                  alert.addAction(action)
+                                  self.present(alert, animated: true, completion: nil)
             }else {
                 print("UnKnown Error")
             }
