@@ -16,7 +16,10 @@ class SideMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     TableView.tableFooterView = UIView()
+      TableView.delegate = self
+            TableView.dataSource = self
+            // delete seprated lines after end of table lines
+            TableView.tableFooterView = UIView()
     }
     
 
@@ -33,6 +36,6 @@ extension SideMenuViewController : UITableViewDelegate , UITableViewDataSource {
                return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return SCREEN_HEIGHT / 20
+        return SCREEN_HEIGHT / 15
     }
 }
