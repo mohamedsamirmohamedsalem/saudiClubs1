@@ -38,4 +38,25 @@ extension SideMenuViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return SCREEN_HEIGHT / 15
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+           
+        }else if indexPath.row == 1 {
+            
+        }else if indexPath.row == 2 {
+              let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MyFollowlistViewController") as! MyFollowlistViewController
+                            self.present(storyBoard, animated: true, completion: nil)
+        }else if indexPath.row == 3 {
+          
+        }else if indexPath.row == 4 {
+           
+        }else if indexPath.row == 5 {
+           
+        }else if indexPath.row == 6 {
+           
+        }else{
+            print("Unknown Error")
+        }
+    }
 }
