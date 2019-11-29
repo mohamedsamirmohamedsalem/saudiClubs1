@@ -26,6 +26,7 @@ class ResetPasswordViewController3: UIViewController {
     
     
     // MARK :- IBActions
+   
     @IBAction func saveBut(_ sender: UIButton) {
         if let newpassword = NewPasswordTF.text , let confirmNewPassword = confirmNewPasswordTF.text {
             if (newpassword.isEmpty && confirmNewPassword.isEmpty){
@@ -48,5 +49,13 @@ class ResetPasswordViewController3: UIViewController {
             print("go")
         }
     }
+    @IBAction func loginAsVisitor(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
+               present(storyBoard, animated: true, completion: nil)
+    }
     
+    @IBAction func signUpViewController(_ sender: UIButton) {
+           let stroyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+           present(stroyBoard, animated: true, completion: nil)
+       }
 }

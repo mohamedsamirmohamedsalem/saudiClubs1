@@ -43,6 +43,10 @@ class ResetPasswordViewController1: UIViewController {
     @IBAction func signUpBut(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func loginAsVisitor(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
+               present(storyBoard, animated: true, completion: nil)
+    }
     //MArk :- Methods
     
     //to check for validation of email

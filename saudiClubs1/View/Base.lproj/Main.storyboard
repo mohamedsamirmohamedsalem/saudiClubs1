@@ -447,6 +447,9 @@
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="loginAsVisitor:" destination="2Rc-Xp-ey0" eventType="touchUpInside" id="i0e-o2-GwU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -588,6 +591,9 @@
                                                 <state key="normal" title=" الدخول كزائر   ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginAsVisitor:" destination="s2f-wB-MYG" eventType="touchUpInside" id="lcg-0g-FaB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -726,6 +732,9 @@
                                                 <state key="normal" title=" الدخول كزائر   ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginAsVisitor:" destination="Nf7-ag-6XA" eventType="touchUpInside" id="wFw-ce-LQc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -862,6 +871,9 @@
                                                 <state key="normal" title="تسجيل حساب جديد">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpViewController:" destination="waX-KC-cIv" eventType="touchUpInside" id="gVu-6e-emB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn6-n4-wtl">
                                                 <rect key="frame" x="274" y="0.0" width="110" height="15"/>
@@ -872,6 +884,9 @@
                                                 <state key="normal" title=" الدخول كزائر   ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginAsVisitor:" destination="waX-KC-cIv" eventType="touchUpInside" id="hPN-U3-BYZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -937,6 +952,9 @@
                                                 <state key="normal" title="تسجيل حساب جديد">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpBut:" destination="vft-u5-Abo" eventType="touchUpInside" id="SNM-ww-EWJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3w-rL-XNo">
                                                 <rect key="frame" x="274" y="0.0" width="110" height="15"/>
@@ -947,6 +965,9 @@
                                                 <state key="normal" title=" الدخول كزائر   ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginAsVisitor:" destination="vft-u5-Abo" eventType="touchUpInside" id="PBG-jg-dQb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

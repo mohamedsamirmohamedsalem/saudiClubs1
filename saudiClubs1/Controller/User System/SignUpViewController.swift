@@ -29,6 +29,10 @@ class SignUpViewController: UIViewController {
         
     }
     //MARK :- IBActions
+    @IBAction func loginAsVisitor(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
+               present(storyBoard, animated: true, completion: nil)
+    }
     @IBAction func signUpBut(_ sender: UIButton) {
         self.view.endEditing(true)
         if let name = nameTF.text , let phone = phoneTF.text , let password = passwordTF.text , let confirmPassword = ConfirmPasswordTF.text , let email = emailTF.text {

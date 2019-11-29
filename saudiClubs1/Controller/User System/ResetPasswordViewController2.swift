@@ -35,4 +35,8 @@ class ResetPasswordViewController2: UIViewController {
         presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func loginAsVisitor(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
+               present(storyBoard, animated: true, completion: nil)
+    }
 }
