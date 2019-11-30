@@ -24,8 +24,7 @@ class SideMenuViewController: UIViewController , UITabBarControllerDelegate  {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
         if sender.tag == 1 {
-          let vc = storyBoard.instantiateViewController(identifier: "TabBarController") as! TabBarController
-                                present(vc, animated: true, completion: nil)
+          self.tabBarController?.selectedIndex = 2
         }else if sender.tag == 3 {
             let vc = storyBoard.instantiateViewController(identifier: "MyFollowlistViewController") as! MyFollowlistViewController
                        present(vc, animated: true, completion: nil)
