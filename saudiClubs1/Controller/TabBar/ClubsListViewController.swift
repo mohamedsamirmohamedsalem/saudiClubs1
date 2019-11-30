@@ -17,7 +17,6 @@ class ClubsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     SearchBar.delegate = self
          TableView.delegate = self
          TableView.dataSource = self
@@ -40,7 +39,19 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        if SCREEN_HEIGHT == 667{ //iPhone 8 /iPhone 7 /iPhone 6 / iPhone 6s
+            return SCREEN_HEIGHT / 2.6
+        }else if SCREEN_HEIGHT ==  736 { //iPhone 8 Plus / Phone 7 Plus
+            return SCREEN_HEIGHT / 2.8
+        }else if SCREEN_HEIGHT ==  812 {//iPhone X
+            return SCREEN_HEIGHT / 2.9
+        }else if SCREEN_HEIGHT ==  896 { //iPhone 11
+            return SCREEN_HEIGHT / 3.1
+        }else if SCREEN_HEIGHT >  896 { // ipad
+            return SCREEN_HEIGHT / 3.2
+        }else {
+            return SCREEN_HEIGHT / 3
+        }
     }
     
 }
