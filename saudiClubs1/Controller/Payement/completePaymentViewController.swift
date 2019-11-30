@@ -17,7 +17,11 @@ class completePaymentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dashedView.addDashedBorder()
-        print(selectedPaymentMethod)
+      
     }
 
+    @IBAction func CompleteBut(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
+          present(storyBoard, animated: true, completion: nil)
+    }
 }

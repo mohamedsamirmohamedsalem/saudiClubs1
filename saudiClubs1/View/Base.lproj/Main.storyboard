@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ac-kd-QAR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -18,7 +18,7 @@
         <!--on-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
         <!--on-->
         <scene sceneID="JWi-mc-er4">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="K7w-PC-VOm" customClass="LoginViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="K7w-PC-VOm" customClass="LoginViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sQI-4u-t6q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,71 +64,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPS-8O-LKR" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="60" width="384" height="701"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="04Y-3f-di5">
-                                                <rect key="frame" x="102" y="40" width="180" height="196.5"/>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-U1-I1M">
-                                                <rect key="frame" x="40" y="316.5" width="304" height="231.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Fkg-HT-k8C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="145.5"/>
-                                                        <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الهاتف" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-RQ-hQX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="24.5"/>
-                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-X7-IWu">
-                                                                <rect key="frame" x="0.0" y="60.5" width="304" height="24.5"/>
-                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6g-69-Arf">
-                                                                <rect key="frame" x="0.0" y="121" width="304" height="24.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                                <state key="normal" title="فقدت كلمة المرور !">
-                                                                    <color key="titleColor" red="0.1764705882352941" green="0.72156862745098038" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="forgetPasswordButton:" destination="K7w-PC-VOm" eventType="touchUpInside" id="Add-W1-Cdy"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-d2-J9f" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="175.5" width="304" height="56"/>
-                                                        <color key="backgroundColor" red="0.0078431372549019607" green="0.72156862745098038" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
-                                                        <state key="normal" title="دخول">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="signInBut:" destination="K7w-PC-VOm" eventType="touchUpInside" id="ELz-a6-IVZ"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="hWT-d2-J9f" firstAttribute="height" secondItem="VPS-8O-LKR" secondAttribute="height" multiplier="0.08" id="1h3-Ct-FCi"/>
-                                            <constraint firstItem="04Y-3f-di5" firstAttribute="width" secondItem="VPS-8O-LKR" secondAttribute="width" multiplier="0.47" id="H5P-tE-xwc"/>
-                                            <constraint firstItem="K2i-U1-I1M" firstAttribute="leading" secondItem="VPS-8O-LKR" secondAttribute="leading" constant="40" id="ItU-Xs-uHz"/>
-                                            <constraint firstItem="04Y-3f-di5" firstAttribute="centerX" secondItem="VPS-8O-LKR" secondAttribute="centerX" id="KNr-Qy-WsZ"/>
-                                            <constraint firstItem="Veq-RQ-hQX" firstAttribute="height" secondItem="VPS-8O-LKR" secondAttribute="height" multiplier="0.035" id="hlW-bd-1wk"/>
-                                            <constraint firstAttribute="trailing" secondItem="K2i-U1-I1M" secondAttribute="trailing" constant="40" id="t2u-M9-ilU"/>
-                                            <constraint firstItem="K2i-U1-I1M" firstAttribute="top" secondItem="04Y-3f-di5" secondAttribute="bottom" constant="80" id="vQq-9n-htm"/>
-                                            <constraint firstItem="04Y-3f-di5" firstAttribute="height" secondItem="VPS-8O-LKR" secondAttribute="height" multiplier="0.28" id="xAg-ej-nJs"/>
-                                            <constraint firstItem="04Y-3f-di5" firstAttribute="top" secondItem="VPS-8O-LKR" secondAttribute="top" constant="80" id="xoY-CQ-7IU">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
-                                            </constraint>
-                                        </constraints>
-                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oFT-B3-OgC">
                                         <rect key="frame" x="28" y="783" width="371" height="15"/>
                                         <subviews>
@@ -157,6 +92,89 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPS-8O-LKR" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="60" width="384" height="701"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="04Y-3f-di5">
+                                                <rect key="frame" x="102" y="40" width="180" height="196.5"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="nxv-gG-aed">
+                                                <rect key="frame" x="40" y="266.5" width="304" height="224"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-bT-Seu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الهاتف" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Veq-RQ-hQX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="29"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xbe-MF-g6f">
+                                                                <rect key="frame" x="0.0" y="29" width="304" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="mcm-zW-tz7"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I4G-XS-bKi">
+                                                        <rect key="frame" x="0.0" y="58" width="304" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-X7-IWu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="29"/>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGL-bC-Yel">
+                                                                <rect key="frame" x="0.0" y="29" width="304" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="l9q-pz-Mvj"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6g-69-Arf">
+                                                        <rect key="frame" x="0.0" y="116" width="304" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <state key="normal" title="فقدت كلمة المرور !">
+                                                            <color key="titleColor" red="0.1764705882352941" green="0.72156862745098038" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="forgetPasswordButton:" destination="K7w-PC-VOm" eventType="touchUpInside" id="Add-W1-Cdy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWT-d2-J9f" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="168" width="304" height="56"/>
+                                                        <color key="backgroundColor" red="0.0078431372549019607" green="0.72156862745098038" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                        <state key="normal" title="دخول">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="signInBut:" destination="K7w-PC-VOm" eventType="touchUpInside" id="ELz-a6-IVZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="nxv-gG-aed" firstAttribute="top" secondItem="04Y-3f-di5" secondAttribute="bottom" constant="30" id="0Jf-Uw-Osv"/>
+                                            <constraint firstAttribute="trailing" secondItem="nxv-gG-aed" secondAttribute="trailing" constant="40" id="G4P-Ib-hpv"/>
+                                            <constraint firstItem="04Y-3f-di5" firstAttribute="width" secondItem="VPS-8O-LKR" secondAttribute="width" multiplier="0.47" id="H5P-tE-xwc"/>
+                                            <constraint firstItem="04Y-3f-di5" firstAttribute="centerX" secondItem="VPS-8O-LKR" secondAttribute="centerX" id="KNr-Qy-WsZ"/>
+                                            <constraint firstItem="hWT-d2-J9f" firstAttribute="height" secondItem="VPS-8O-LKR" secondAttribute="height" multiplier="0.08" id="gt7-T3-ahk"/>
+                                            <constraint firstItem="nxv-gG-aed" firstAttribute="leading" secondItem="VPS-8O-LKR" secondAttribute="leading" constant="40" id="hN6-bh-gKf"/>
+                                            <constraint firstItem="04Y-3f-di5" firstAttribute="height" secondItem="VPS-8O-LKR" secondAttribute="height" multiplier="0.28" id="xAg-ej-nJs"/>
+                                            <constraint firstItem="04Y-3f-di5" firstAttribute="top" secondItem="VPS-8O-LKR" secondAttribute="top" constant="80" id="xoY-CQ-7IU">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0078431372549019607" green="0.72156862745098038" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -212,78 +230,206 @@
         <!--المزيد-->
         <scene sceneID="R8A-eP-klJ">
             <objects>
-                <viewController id="yu1-zv-9Gh" customClass="SideMenuViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yu1-zv-9Gh" customClass="SideMenuViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CiR-OO-5gb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-wk-Gjr" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-wk-Gjr" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                 <rect key="frame" x="20" y="64" width="374" height="729"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hYK-Kv-w9w">
-                                        <rect key="frame" x="103" y="20" width="168" height="203.5"/>
+                                        <rect key="frame" x="101" y="20" width="172" height="201.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-img" translatesAutoresizingMaskIntoConstraints="NO" id="c7P-ab-ghW">
-                                                <rect key="frame" x="24" y="0.0" width="120" height="120"/>
+                                                <rect key="frame" x="39.5" y="0.0" width="93.5" height="93.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="0Gb-EB-xn8"/>
                                                     <constraint firstAttribute="width" secondItem="c7P-ab-ghW" secondAttribute="height" multiplier="1:1" id="Pfb-LA-XdZ"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عبدالرحمن ابو شادي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D21-pc-pfI">
-                                                <rect key="frame" x="0.0" y="140" width="168" height="23"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                <rect key="frame" x="0.0" y="113.5" width="172" height="36"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="19"/>
                                                 <color key="textColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عضويه مجانيه" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERB-ky-NUH">
-                                                <rect key="frame" x="34" y="183" width="100.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <rect key="frame" x="35" y="169.5" width="102.5" height="32"/>
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aBU-Fk-5Df">
-                                        <rect key="frame" x="0.0" y="253.5" width="374" height="475.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuTableViewCell" rowHeight="68" id="wbt-F6-cWF" customClass="SideMenuTableViewCell" customModule="saudiClubs1" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="374" height="68"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbt-F6-cWF" id="JYX-Sj-3Qd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="68"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPE-F4-LO9">
-                                                            <rect key="frame" x="20" y="11" width="334" height="46"/>
-                                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
-                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="rPE-F4-LO9" firstAttribute="leading" secondItem="JYX-Sj-3Qd" secondAttribute="leadingMargin" id="77f-rz-thH"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="rPE-F4-LO9" secondAttribute="bottom" id="gMj-g7-5tU"/>
-                                                        <constraint firstItem="rPE-F4-LO9" firstAttribute="top" secondItem="JYX-Sj-3Qd" secondAttribute="topMargin" id="tYK-cw-d78"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="rPE-F4-LO9" secondAttribute="trailing" id="zgU-mD-80N"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                                <connections>
-                                                    <outlet property="sideMenuLabel" destination="rPE-F4-LO9" id="B5l-UT-KKZ"/>
-                                                </connections>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8ij-T0-HY7">
+                                        <rect key="frame" x="3" y="241.5" width="368" height="487.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OBV-vx-TV9">
+                                                <rect key="frame" x="0.0" y="0.0" width="368" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTm-Wi-W1H">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="إستعراض الآندية السعودية">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="g06-HY-DmB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHT-TH-5N1">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="0.5"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="5on-XF-4Vx"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OPV-de-qNG">
+                                                <rect key="frame" x="0.0" y="70" width="368" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-dH-i18">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="البحث عن نادي">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="Kfl-hT-k7q"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-4W-EMp">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="0.5"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="Va6-Fm-i1g"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9v8-0e-y5s">
+                                                <rect key="frame" x="0.0" y="140" width="368" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYs-mS-uR6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="قائمة متابعاتي">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="R6z-bE-u8d"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riP-mH-XpK">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="0.5"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="RcW-6S-R3y"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" tag="4" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6p7-CY-32k">
+                                                <rect key="frame" x="0.0" y="210" width="368" height="67.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-Vz-k8J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="الشروط والاحكام">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="kx0-g8-YaJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOd-SC-BL6">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="1"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="wME-yj-dUG"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Uar-7h-PRY">
+                                                <rect key="frame" x="0.0" y="280.5" width="368" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F8-pn-kPH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="عن التطبيق">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="dyV-EA-57r"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQg-Fl-I4u">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="0.5"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="w3H-J9-NlD"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nrR-M7-faM">
+                                                <rect key="frame" x="0.0" y="350.5" width="368" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wi-0s-FTr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="اتصل بنا">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="H6a-G3-jTl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9z-r8-9yA">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="0.5"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="RuP-gv-Wbx"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mh1-Ib-MOh">
+                                                <rect key="frame" x="0.0" y="420.5" width="368" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ca-Iy-pDC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="368" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                        <state key="normal" title="تسجيل الخروج">
+                                                            <color key="titleColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sideMenuButtons:" destination="yu1-zv-9Gh" eventType="touchUpInside" id="ala-Fb-I31"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ND1-It-KJQ">
+                                                        <rect key="frame" x="0.0" y="66.5" width="368" height="0.5"/>
+                                                        <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="0.59999999999999998" id="969-Yl-hYm"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="8ij-T0-HY7" firstAttribute="top" secondItem="hYK-Kv-w9w" secondAttribute="bottom" constant="20" id="0Gd-kF-Nbv"/>
                                     <constraint firstItem="hYK-Kv-w9w" firstAttribute="centerX" secondItem="PJE-wk-Gjr" secondAttribute="centerX" id="1Aa-4h-ToQ"/>
-                                    <constraint firstItem="aBU-Fk-5Df" firstAttribute="leading" secondItem="PJE-wk-Gjr" secondAttribute="leading" id="AO8-oq-WQK"/>
-                                    <constraint firstAttribute="trailing" secondItem="aBU-Fk-5Df" secondAttribute="trailing" id="HHw-5D-ypv"/>
-                                    <constraint firstItem="aBU-Fk-5Df" firstAttribute="top" secondItem="hYK-Kv-w9w" secondAttribute="bottom" constant="30" id="Qwf-aC-Fmi"/>
-                                    <constraint firstAttribute="bottom" secondItem="aBU-Fk-5Df" secondAttribute="bottom" id="RRu-PV-oF1"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ij-T0-HY7" secondAttribute="trailing" constant="3" id="B4g-Qj-fuu"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ij-T0-HY7" secondAttribute="bottom" id="CU7-QD-mfQ"/>
                                     <constraint firstItem="hYK-Kv-w9w" firstAttribute="top" secondItem="PJE-wk-Gjr" secondAttribute="top" constant="20" id="cww-wu-23n"/>
+                                    <constraint firstItem="8ij-T0-HY7" firstAttribute="leading" secondItem="PJE-wk-Gjr" secondAttribute="leading" constant="3" id="msu-CU-cJg"/>
+                                    <constraint firstItem="c7P-ab-ghW" firstAttribute="width" secondItem="PJE-wk-Gjr" secondAttribute="width" multiplier="0.25" id="p9S-vU-54m"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -298,18 +444,17 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="المزيد" image="more-vertical" id="QFo-aj-K1w"/>
                     <connections>
-                        <outlet property="TableView" destination="aBU-Fk-5Df" id="Q5a-3A-6FY"/>
                         <outlet property="personalImage" destination="c7P-ab-ghW" id="6Vh-US-dxn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjc-d7-OEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="1606"/>
+            <point key="canvasLocation" x="2077" y="1606"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qx9-ns-fse">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="QcX-wi-G87" customClass="TabBarController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="QcX-wi-G87" customClass="TabBarController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u10-MP-HWl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -318,6 +463,7 @@
                         <color key="selectedImageTintColor" red="0.0078431372549019607" green="0.72156862745098038" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <outlet property="TabBar" destination="u10-MP-HWl" id="OP4-OL-6LI"/>
                         <segue destination="yu1-zv-9Gh" kind="relationship" relationship="viewControllers" id="AWc-ep-3oU"/>
                         <segue destination="Wua-qm-AOI" kind="relationship" relationship="viewControllers" id="LPJ-ZU-Gbq"/>
                         <segue destination="Lk5-aJ-BGE" kind="relationship" relationship="viewControllers" id="1RY-AM-EoK"/>
@@ -330,7 +476,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="sZe-lO-wiM">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="2Rc-Xp-ey0" customClass="SignUpViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="2Rc-Xp-ey0" customClass="SignUpViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5qs-aL-Vep">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,61 +485,121 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التسجيل في تطبيق اندية السعودية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGm-T5-Mhs">
-                                        <rect key="frame" x="73" y="15" width="268.5" height="3"/>
+                                        <rect key="frame" x="73" y="15" width="268.5" height="33.5"/>
                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6k-kT-Wze" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="33" width="384" height="764"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6k-kT-Wze" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
+                                        <rect key="frame" x="79" y="63.5" width="320" height="733.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="k2e-fv-Q6C">
-                                                <rect key="frame" x="103.5" y="10" width="177" height="153"/>
+                                                <rect key="frame" x="86.5" y="10" width="147" height="147"/>
                                             </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="hWg-7h-Xkm">
-                                                <rect key="frame" x="40" y="173" width="304" height="373"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bxE-i5-K46">
+                                                <rect key="frame" x="40" y="167" width="240" height="195"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOf-bG-omL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="45.5"/>
-                                                        <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXW-l1-2Yi">
-                                                        <rect key="frame" x="0.0" y="81.5" width="304" height="46"/>
-                                                        <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الاكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mia-Xy-2oM">
-                                                        <rect key="frame" x="0.0" y="163.5" width="304" height="46"/>
-                                                        <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" id="2Tx-1J-qLJ">
-                                                        <rect key="frame" x="0.0" y="245.5" width="304" height="45.5"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" id="ZC3-7c-uN4">
-                                                        <rect key="frame" x="0.0" y="327" width="304" height="46"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <string key="placeholder">اعادة كلمة المرور
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PnS-fB-Z1F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="15"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOf-bG-omL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="13"/>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkf-cH-Sqc">
+                                                                <rect key="frame" x="0.0" y="14" width="240" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Gao-nX-VJ5"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="CUq-Ps-DQu">
+                                                        <rect key="frame" x="0.0" y="45" width="240" height="15"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXW-l1-2Yi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="13"/>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-6V-0AB">
+                                                                <rect key="frame" x="0.0" y="14" width="240" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="BBS-jG-2Ha"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="21d-Jg-Ey5">
+                                                        <rect key="frame" x="0.0" y="90" width="240" height="15"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الاكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mia-Xy-2oM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="13"/>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trs-Ek-lIC">
+                                                                <rect key="frame" x="0.0" y="14" width="240" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="dbB-3O-UnR"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FII-zU-QPR">
+                                                        <rect key="frame" x="0.0" y="135" width="240" height="15"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" id="2Tx-1J-qLJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="13"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRR-Is-OaB">
+                                                                <rect key="frame" x="0.0" y="14" width="240" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="lsZ-Jw-uxQ"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-97-ivJ">
+                                                        <rect key="frame" x="0.0" y="180" width="240" height="15"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" id="ZC3-7c-uN4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="13"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <string key="placeholder">اعادة كلمة المرور
 </string>
-                                                        <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
+                                                                <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90l-sR-vpr">
+                                                                <rect key="frame" x="0.0" y="14" width="240" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Zoi-ca-Hul"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="91Q-jm-XRp">
-                                                <rect key="frame" x="40" y="566" width="304" height="89.5"/>
+                                                <rect key="frame" x="40" y="392" width="240" height="86"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-o1-Dsc" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="46"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-o1-Dsc" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                                         <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                                         <state key="normal" title="تسجيل">
@@ -403,8 +609,8 @@
                                                             <action selector="signUpBut:" destination="2Rc-Xp-ey0" eventType="touchUpInside" id="xxX-ce-Kia"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4T-pw-GFs" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="56" width="304" height="33.5"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4T-pw-GFs" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="54" width="240" height="32"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <state key="normal" title="لديك حساب بالفعل ! سجل دخول الان">
@@ -420,21 +626,18 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="91Q-jm-XRp" firstAttribute="leading" secondItem="Q6k-kT-Wze" secondAttribute="leading" constant="40" id="5WO-3v-jcV"/>
-                                            <constraint firstAttribute="trailing" secondItem="hWg-7h-Xkm" secondAttribute="trailing" constant="40" id="7Ni-lm-dfI"/>
-                                            <constraint firstItem="hWg-7h-Xkm" firstAttribute="top" secondItem="k2e-fv-Q6C" secondAttribute="bottom" constant="20" id="BmR-Ic-LRl">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
-                                            </constraint>
-                                            <constraint firstItem="kOf-bG-omL" firstAttribute="height" secondItem="Q6k-kT-Wze" secondAttribute="height" multiplier="0.06" id="Hbe-uN-2cD"/>
+                                            <constraint firstItem="bxE-i5-K46" firstAttribute="top" secondItem="k2e-fv-Q6C" secondAttribute="bottom" constant="10" id="9VM-i6-Ai0"/>
+                                            <constraint firstAttribute="trailing" secondItem="bxE-i5-K46" secondAttribute="trailing" constant="40" id="GdH-dy-z9c"/>
                                             <constraint firstItem="k2e-fv-Q6C" firstAttribute="centerX" secondItem="Q6k-kT-Wze" secondAttribute="centerX" id="IPe-La-nHC"/>
                                             <constraint firstAttribute="trailing" secondItem="91Q-jm-XRp" secondAttribute="trailing" constant="40" id="Kfu-Qv-Hrj"/>
+                                            <constraint firstItem="bxE-i5-K46" firstAttribute="leading" secondItem="Q6k-kT-Wze" secondAttribute="leading" constant="40" id="Mj9-er-Vp7"/>
                                             <constraint firstItem="k2e-fv-Q6C" firstAttribute="height" secondItem="Q6k-kT-Wze" secondAttribute="height" multiplier="0.2" id="NJU-rL-UW1"/>
                                             <constraint firstItem="k2e-fv-Q6C" firstAttribute="width" secondItem="Q6k-kT-Wze" secondAttribute="width" multiplier="0.46" id="R3z-pr-lt3"/>
                                             <constraint firstItem="Fzm-o1-Dsc" firstAttribute="height" secondItem="Q6k-kT-Wze" secondAttribute="height" multiplier="0.06" id="St1-Lg-xd2"/>
-                                            <constraint firstItem="91Q-jm-XRp" firstAttribute="top" secondItem="hWg-7h-Xkm" secondAttribute="bottom" constant="20" id="XSU-r7-aS7"/>
                                             <constraint firstItem="k2e-fv-Q6C" firstAttribute="top" secondItem="Q6k-kT-Wze" secondAttribute="top" constant="20" id="aUf-BT-8aM">
                                                 <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                             </constraint>
-                                            <constraint firstItem="hWg-7h-Xkm" firstAttribute="leading" secondItem="Q6k-kT-Wze" secondAttribute="leading" constant="40" id="uwp-TF-pgw"/>
+                                            <constraint firstItem="91Q-jm-XRp" firstAttribute="top" secondItem="bxE-i5-K46" secondAttribute="bottom" constant="30" id="wNv-nL-5K5"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDa-1q-WoV">
@@ -488,7 +691,7 @@
         <!--Reset Password View Controller1-->
         <scene sceneID="N60-tL-2S8">
             <objects>
-                <viewController storyboardIdentifier="ResetPasswordViewController1" id="s2f-wB-MYG" customClass="ResetPasswordViewController1" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetPasswordViewController1" id="s2f-wB-MYG" customClass="ResetPasswordViewController1" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zxM-Zh-0gF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,14 +708,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-Q8-jUX" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-Q8-jUX" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                         <rect key="frame" x="15" y="60" width="384" height="703"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mbo-Lk-IaO">
-                                                <rect key="frame" x="40" y="519.5" width="304" height="114.5"/>
+                                                <rect key="frame" x="40" y="516.5" width="304" height="117.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="rpG-RT-fEt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="28.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rpG-RT-fEt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="31.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vsN-C8-CCh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="28.5"/>
@@ -520,10 +723,17 @@
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-e9-wLy">
+                                                                <rect key="frame" x="0.0" y="30.5" width="304" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="oBA-Q7-GNh"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-5F-t3w" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="58.5" width="304" height="56"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-5F-t3w" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="61.5" width="304" height="56"/>
                                                         <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                                         <state key="normal" title="ارسال كود التفعيل">
@@ -631,7 +841,7 @@
         <!--Reset Password View Controller2-->
         <scene sceneID="ffz-Xz-gCd">
             <objects>
-                <viewController storyboardIdentifier="ResetPasswordViewController2" id="Nf7-ag-6XA" customClass="ResetPasswordViewController2" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetPasswordViewController2" id="Nf7-ag-6XA" customClass="ResetPasswordViewController2" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6L5-hk-bNI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,14 +858,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxd-cQ-PY2" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxd-cQ-PY2" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                         <rect key="frame" x="15" y="60" width="384" height="701"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HMf-H7-kB6">
-                                                <rect key="frame" x="40" y="514.5" width="304" height="117.5"/>
+                                                <rect key="frame" x="40" y="510.5" width="304" height="121.5"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Xmx-a4-3O4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="31.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xmx-a4-3O4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="35.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="******" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0xz-vI-bBI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="31.5"/>
@@ -663,10 +873,17 @@
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-fQ-nug">
+                                                                <rect key="frame" x="0.0" y="34.5" width="304" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="lXU-ai-sRJ"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xj-tI-uJw" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="61.5" width="304" height="56"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xj-tI-uJw" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="65.5" width="304" height="56"/>
                                                         <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                                         <state key="normal" title="استكمال">
@@ -772,7 +989,7 @@
         <!--Reset Password View Controller3-->
         <scene sceneID="uPf-CP-7QG">
             <objects>
-                <viewController storyboardIdentifier="ResetPasswordViewController3" id="waX-KC-cIv" customClass="ResetPasswordViewController3" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetPasswordViewController3" id="waX-KC-cIv" customClass="ResetPasswordViewController3" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FvC-lw-WCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -789,33 +1006,52 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-4u-cib" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-4u-cib" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                         <rect key="frame" x="15" y="60" width="384" height="701"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-bo-kOB">
-                                                <rect key="frame" x="40" y="454" width="304" height="178"/>
+                                                <rect key="frame" x="40" y="451" width="304" height="181"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="rnX-7I-ATy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="92"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="025-yi-rNL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="33"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمه المرور الجديدة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDB-9g-FZj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="28"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="29"/>
                                                                 <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-kp-sJD">
+                                                                <rect key="frame" x="0.0" y="32" width="304" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="UhI-Sm-BFv"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="EXl-Su-Z4S">
+                                                        <rect key="frame" x="0.0" y="63" width="304" height="32"/>
+                                                        <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vt2-wp-UTs">
-                                                                <rect key="frame" x="0.0" y="64" width="304" height="28"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="29"/>
                                                                 <string key="placeholder">اعادة كلمة المرور الجديدة
 </string>
                                                                 <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9y-gX-vdq">
+                                                                <rect key="frame" x="0.0" y="31" width="304" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="lnQ-Dc-i0b"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0n-Z9-VhI" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="122" width="304" height="56"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0n-Z9-VhI" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="125" width="304" height="56"/>
                                                         <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
                                                         <state key="normal" title="حفظ">
@@ -850,7 +1086,6 @@
                                             <constraint firstItem="J0n-Z9-VhI" firstAttribute="height" secondItem="zrK-4u-cib" secondAttribute="height" multiplier="0.08" id="EeL-ig-HEg"/>
                                             <constraint firstItem="MgZ-bo-kOB" firstAttribute="leading" secondItem="zrK-4u-cib" secondAttribute="leading" constant="40" id="SRC-iL-2kH"/>
                                             <constraint firstItem="asK-wf-m7P" firstAttribute="width" secondItem="zrK-4u-cib" secondAttribute="width" multiplier="0.47" id="Sab-PK-E44"/>
-                                            <constraint firstItem="sDB-9g-FZj" firstAttribute="height" secondItem="zrK-4u-cib" secondAttribute="height" multiplier="0.04" id="Zls-mh-La0"/>
                                             <constraint firstItem="asK-wf-m7P" firstAttribute="height" secondItem="zrK-4u-cib" secondAttribute="height" multiplier="0.23" id="aiR-57-2ed"/>
                                             <constraint firstAttribute="trailing" secondItem="MgZ-bo-kOB" secondAttribute="trailing" constant="40" id="bWn-QV-EkN"/>
                                             <constraint firstAttribute="bottom" secondItem="MgZ-bo-kOB" secondAttribute="bottom" constant="69" id="eg3-Zj-zIC"/>
@@ -924,7 +1159,7 @@
         <!--Select Payment View Controller-->
         <scene sceneID="rkV-rs-7ed">
             <objects>
-                <viewController storyboardIdentifier="selectPaymentViewController" id="vft-u5-Abo" customClass="selectPaymentViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="selectPaymentViewController" id="vft-u5-Abo" customClass="selectPaymentViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dnv-ck-gdJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -969,7 +1204,7 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-VL-zie" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-VL-zie" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                         <rect key="frame" x="15" y="45" width="384" height="716"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-xh-4DF">
@@ -1015,7 +1250,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="evJ-ec-sLa">
                                                                 <rect key="frame" x="0.0" y="0.0" width="324" height="171.5"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23a-FB-jfz" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23a-FB-jfz" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="147" height="171.5"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8SA-Nt-n9C">
@@ -1060,7 +1295,7 @@
                                                                             <constraint firstAttribute="bottom" secondItem="PMa-CV-ZfW" secondAttribute="bottom" id="tAV-f2-cmL"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-1v-aS5" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-1v-aS5" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                                                         <rect key="frame" x="177" y="0.0" width="147" height="171.5"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="djv-yn-MfX">
@@ -1117,7 +1352,7 @@
                                                             <constraint firstAttribute="trailing" secondItem="evJ-ec-sLa" secondAttribute="trailing" id="aZH-Ab-EGV"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFw-XG-TIg" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFw-XG-TIg" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="201.5" width="324" height="57.5"/>
                                                         <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
@@ -1186,7 +1421,7 @@
         <!--Complete Payment View Controller-->
         <scene sceneID="p2h-lg-r46">
             <objects>
-                <viewController storyboardIdentifier="completePaymentViewController" id="9ac-kd-QAR" customClass="completePaymentViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="completePaymentViewController" id="9ac-kd-QAR" customClass="completePaymentViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MfJ-CN-a01">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1203,11 +1438,11 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbp-Wk-lJB" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbp-Wk-lJB" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                         <rect key="frame" x="15" y="45" width="384" height="733"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Mk-Bej">
-                                                <rect key="frame" x="30" y="10" width="324" height="205"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Mk-Bej">
+                                                <rect key="frame" x="30" y="10" width="324" height="173"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="Npr-mq-d1W">
                                                         <rect key="frame" x="129.5" y="0.0" width="65" height="65"/>
@@ -1217,100 +1452,107 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tGx-Dw-yhq">
-                                                        <rect key="frame" x="25.5" y="75" width="273" height="60"/>
+                                                        <rect key="frame" x="51" y="70" width="222" height="49"/>
                                                         <string key="text">يتم التحويل البنكي علي حساب التطبيق : 
 تطبيق الاندية السعودية</string>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
                                                         <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yve-hZ-ewJ">
-                                                        <rect key="frame" x="41.5" y="145" width="241" height="60"/>
+                                                        <rect key="frame" x="64" y="124" width="196" height="49"/>
                                                         <string key="text"> حساب رقم 123123123123123123 
 بنك البلاد - ايبان 123123123123</string>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
                                                         <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-R8-OmD">
-                                                <rect key="frame" x="30" y="230" width="324" height="147"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpY-Hs-MNz">
+                                                <rect key="frame" x="30" y="198" width="324" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybD-Iw-OX2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="75.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-R8-OmD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="128"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yqq-zA-cHw">
-                                                                <rect key="frame" x="0.0" y="10" width="324" height="55.5"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybD-Iw-OX2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="71"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addimg" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-5r-Inq">
-                                                                        <rect key="frame" x="153" y="0.0" width="18" height="15"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="18" id="CyB-wE-X86"/>
-                                                                            <constraint firstAttribute="height" constant="15" id="pNe-mu-aOf"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اضف صورة التحويل البنكي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-Nq-5Ll">
-                                                                        <rect key="frame" x="76.5" y="35" width="171" height="20.5"/>
-                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                                        <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yqq-zA-cHw">
+                                                                        <rect key="frame" x="0.0" y="10" width="324" height="51"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addimg" translatesAutoresizingMaskIntoConstraints="NO" id="TA9-5r-Inq">
+                                                                                <rect key="frame" x="153.5" y="0.0" width="17" height="14.5"/>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اضف صورة التحويل البنكي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-Nq-5Ll">
+                                                                                <rect key="frame" x="89" y="24.5" width="146" height="26.5"/>
+                                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
+                                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                 </subviews>
-                                                            </stackView>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Yqq-zA-cHw" firstAttribute="leading" secondItem="ybD-Iw-OX2" secondAttribute="leading" id="AVj-Ac-BQu"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Yqq-zA-cHw" secondAttribute="bottom" constant="10" id="Hob-uu-Gg1"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Yqq-zA-cHw" secondAttribute="trailing" id="Rpn-eT-TyJ"/>
+                                                                    <constraint firstItem="Yqq-zA-cHw" firstAttribute="top" secondItem="ybD-Iw-OX2" secondAttribute="top" constant="10" id="cpb-o8-2SU"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OS-cA-fkj" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="86" width="324" height="42"/>
+                                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                                                <state key="normal" title="استكمال">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="CompleteBut:" destination="9ac-kd-QAR" eventType="touchUpInside" id="vdG-Tq-RXz"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="Yqq-zA-cHw" firstAttribute="leading" secondItem="ybD-Iw-OX2" secondAttribute="leading" id="AVj-Ac-BQu"/>
-                                                            <constraint firstAttribute="bottom" secondItem="Yqq-zA-cHw" secondAttribute="bottom" constant="10" id="Hob-uu-Gg1"/>
-                                                            <constraint firstAttribute="trailing" secondItem="Yqq-zA-cHw" secondAttribute="trailing" id="Rpn-eT-TyJ"/>
-                                                            <constraint firstItem="Yqq-zA-cHw" firstAttribute="top" secondItem="ybD-Iw-OX2" secondAttribute="top" constant="10" id="cpb-o8-2SU"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OS-cA-fkj" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="85.5" width="324" height="61.5"/>
-                                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
-                                                        <state key="normal" title="استكمال">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="ybD-Iw-OX2" firstAttribute="top" secondItem="YKb-R8-OmD" secondAttribute="top" id="efP-68-lbG"/>
+                                                    <constraint firstItem="YKb-R8-OmD" firstAttribute="top" secondItem="WpY-Hs-MNz" secondAttribute="top" id="0if-oJ-r9S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YKb-R8-OmD" secondAttribute="bottom" id="NKZ-fH-kB0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YKb-R8-OmD" secondAttribute="trailing" id="Q6s-oy-ktn"/>
+                                                    <constraint firstItem="YKb-R8-OmD" firstAttribute="leading" secondItem="WpY-Hs-MNz" secondAttribute="leading" id="fBX-16-bmU"/>
                                                 </constraints>
-                                            </stackView>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnH-c0-7cj">
-                                                <rect key="frame" x="0.0" y="387" width="384" height="1"/>
+                                                <rect key="frame" x="0.0" y="336" width="384" height="1"/>
                                                 <color key="backgroundColor" red="0.83518568719999997" green="0.83518568719999997" blue="0.83518568719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Zry-Wm-QfM"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A8v-Ga-okm">
-                                                <rect key="frame" x="54" y="398" width="276" height="197"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A8v-Ga-okm">
+                                                <rect key="frame" x="69.5" y="347" width="245" height="201"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sms" translatesAutoresizingMaskIntoConstraints="NO" id="b99-iK-p2V">
-                                                        <rect key="frame" x="103.5" y="0.0" width="69" height="69.5"/>
+                                                        <rect key="frame" x="88" y="0.0" width="69" height="69"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="b99-iK-p2V" secondAttribute="height" multiplier="1:1" id="PdB-cp-4O4"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="uMo-K0-LYP">
-                                                        <rect key="frame" x="0.0" y="89.5" width="276" height="107.5"/>
+                                                        <rect key="frame" x="0.0" y="79" width="245" height="122"/>
                                                         <string key="text">للإشتراك قم بإرسال رسالة نصية الي رقم
-
  1234567
  سيصلك تنبيه بتفعيل حسابك من خلال ادارة 
 التطبيق لتتمكن من التمتع بمميزات التطبيق
  ومتابعه انديتك المفضلة .</string>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
                                                         <color key="textColor" red="0.46666666670000001" green="0.52549019610000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zz-08-zZV" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zz-08-zZV" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="336" width="324" height="45"/>
                                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1325,21 +1567,21 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="YKb-R8-OmD" firstAttribute="leading" secondItem="nbp-Wk-lJB" secondAttribute="leading" constant="30" id="2WG-KK-tww"/>
-                                            <constraint firstItem="3OS-cA-fkj" firstAttribute="height" secondItem="vf9-Mk-Bej" secondAttribute="height" multiplier="0.3" id="3G4-bm-0Wr"/>
+                                            <constraint firstItem="TA9-5r-Inq" firstAttribute="height" secondItem="nbp-Wk-lJB" secondAttribute="height" multiplier="0.02" id="26B-AY-mrR"/>
                                             <constraint firstAttribute="trailing" secondItem="vf9-Mk-Bej" secondAttribute="trailing" constant="30" id="3w1-aM-RlY"/>
+                                            <constraint firstItem="WpY-Hs-MNz" firstAttribute="leading" secondItem="nbp-Wk-lJB" secondAttribute="leading" constant="30" id="6yQ-Bo-yHd"/>
+                                            <constraint firstItem="TA9-5r-Inq" firstAttribute="width" secondItem="nbp-Wk-lJB" secondAttribute="width" multiplier="0.045" id="AEE-hc-c2b"/>
+                                            <constraint firstItem="WpY-Hs-MNz" firstAttribute="top" secondItem="vf9-Mk-Bej" secondAttribute="bottom" constant="15" id="E4z-WF-QKj"/>
                                             <constraint firstItem="vf9-Mk-Bej" firstAttribute="leading" secondItem="nbp-Wk-lJB" secondAttribute="leading" constant="30" id="INb-ow-2be"/>
                                             <constraint firstItem="b99-iK-p2V" firstAttribute="width" secondItem="nbp-Wk-lJB" secondAttribute="width" multiplier="0.18" id="Lmg-E5-bHt"/>
                                             <constraint firstItem="A8v-Ga-okm" firstAttribute="centerX" secondItem="nbp-Wk-lJB" secondAttribute="centerX" id="P7F-st-2gh"/>
                                             <constraint firstAttribute="trailing" secondItem="VnH-c0-7cj" secondAttribute="trailing" id="PR1-ie-dVc"/>
                                             <constraint firstItem="VnH-c0-7cj" firstAttribute="leading" secondItem="nbp-Wk-lJB" secondAttribute="leading" id="Sjs-2y-eu3"/>
-                                            <constraint firstItem="VnH-c0-7cj" firstAttribute="top" secondItem="YKb-R8-OmD" secondAttribute="bottom" constant="10" id="c5B-v9-Rim"/>
+                                            <constraint firstItem="VnH-c0-7cj" firstAttribute="top" secondItem="WpY-Hs-MNz" secondAttribute="bottom" constant="10" id="ULe-nK-YDL"/>
                                             <constraint firstItem="vf9-Mk-Bej" firstAttribute="centerX" secondItem="nbp-Wk-lJB" secondAttribute="centerX" id="coT-5j-qkI"/>
-                                            <constraint firstAttribute="trailing" secondItem="YKb-R8-OmD" secondAttribute="trailing" constant="30" id="omC-Zr-S5T"/>
+                                            <constraint firstAttribute="trailing" secondItem="WpY-Hs-MNz" secondAttribute="trailing" constant="30" id="mpZ-nt-HQw"/>
                                             <constraint firstItem="vf9-Mk-Bej" firstAttribute="top" secondItem="nbp-Wk-lJB" secondAttribute="top" constant="10" id="qTt-0D-YAb"/>
-                                            <constraint firstItem="YKb-R8-OmD" firstAttribute="centerX" secondItem="vf9-Mk-Bej" secondAttribute="centerX" id="tws-lh-hdj"/>
                                             <constraint firstItem="A8v-Ga-okm" firstAttribute="top" secondItem="VnH-c0-7cj" secondAttribute="bottom" constant="10" id="uEo-9D-OpK"/>
-                                            <constraint firstItem="YKb-R8-OmD" firstAttribute="top" secondItem="vf9-Mk-Bej" secondAttribute="bottom" constant="15" id="vrN-5W-7Zm"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="subviews">
@@ -1384,7 +1626,7 @@
         <!--ملفي الشخصي-->
         <scene sceneID="uJ2-1j-ab1">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="Wua-qm-AOI" customClass="ProfileViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="Wua-qm-AOI" customClass="ProfileViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bqe-WU-Vf3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1392,72 +1634,162 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSG-e3-qyH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="869-BO-0TG" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="869-BO-0TG" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                         <rect key="frame" x="15" y="20" width="384" height="729"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-img" translatesAutoresizingMaskIntoConstraints="NO" id="JSJ-mn-QcP">
-                                                <rect key="frame" x="119" y="20" width="146" height="146"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="JSJ-mn-QcP" secondAttribute="height" multiplier="1:1" id="MRs-1z-WG3"/>
-                                                </constraints>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ysJ-fE-yBZ">
-                                                <rect key="frame" x="40" y="196" width="304" height="410.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F9I-no-3uH">
+                                                <rect key="frame" x="20" y="185" width="344" height="280"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Sdx-x8-HyS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="302"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P2t-B2-ZqV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="344" height="52"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSu-Dc-KsW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="36.5"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r8S-OI-Ce6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="344" height="51"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MU-QS-Y2r">
-                                                                <rect key="frame" x="0.0" y="66.5" width="304" height="36"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد  الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-tb-XzM">
-                                                                <rect key="frame" x="0.0" y="132.5" width="304" height="36.5"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOa-JU-pQk">
-                                                                <rect key="frame" x="0.0" y="199" width="304" height="36.5"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="اعادة كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Vf-Wi-213">
-                                                                <rect key="frame" x="0.0" y="265.5" width="304" height="36.5"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-9W-4xQ">
+                                                                <rect key="frame" x="0.0" y="51" width="344" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="qda-ZU-bHV"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzW-y0-rif" customClass="ButtonCorners" customModule="saudiClubs1" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="352" width="304" height="58.5"/>
-                                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
-                                                        <state key="normal" title="تحديث البيانات">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-5F-i0Z">
+                                                        <rect key="frame" x="0.0" y="57" width="344" height="52"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiT-oc-f1j">
+                                                                <rect key="frame" x="0.0" y="0.0" width="344" height="51"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyr-8X-ZKf">
+                                                                <rect key="frame" x="0.0" y="51" width="344" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="s4b-Dd-tWz"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sZ7-bN-qY7">
+                                                        <rect key="frame" x="0.0" y="114" width="344" height="52"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lpw-cE-j9U">
+                                                                <rect key="frame" x="0.0" y="0.0" width="344" height="51"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-Wm-Bga">
+                                                                <rect key="frame" x="0.0" y="51" width="344" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="1JF-dG-aVr"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vgz-84-xgJ">
+                                                        <rect key="frame" x="0.0" y="171" width="344" height="52"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمه المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CX2-Vx-8sh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="344" height="51"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYr-x7-q5X">
+                                                                <rect key="frame" x="0.0" y="51" width="344" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="dHI-4D-u9g"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N6q-MT-3ug">
+                                                        <rect key="frame" x="0.0" y="228" width="344" height="52"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="اعادة كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bg9-Et-s2T">
+                                                                <rect key="frame" x="0.0" y="0.0" width="344" height="51"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvY-Ad-tMz">
+                                                                <rect key="frame" x="0.0" y="51" width="344" height="1"/>
+                                                                <color key="backgroundColor" red="0.46666666666666667" green="0.52549019607843139" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="QU0-38-eGz"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkD-fT-hQl" customClass="ButtonCorners" customModule="saudiClubs" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="505" width="344" height="58.5"/>
+                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                <state key="normal" title="تحديث البيانات">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYN-YI-dpi">
+                                                <rect key="frame" x="115" y="20" width="154" height="125"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-img" translatesAutoresizingMaskIntoConstraints="NO" id="Ss6-H5-QYJ">
+                                                        <rect key="frame" x="20" y="20" width="114" height="85"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpS-cR-tDb">
+                                                        <rect key="frame" x="27" y="75" width="40.5" height="40"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="JpS-cR-tDb" secondAttribute="height" multiplier="1:1" id="eMO-uv-FVi"/>
+                                                        </constraints>
+                                                        <state key="normal" image="img_edit">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="updateDetails:" destination="Wua-qm-AOI" eventType="touchUpInside" id="dqF-FG-pmK"/>
+                                                            <action selector="imagePicker:" destination="Wua-qm-AOI" eventType="touchUpInside" id="HCw-ce-Zd0"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                            </stackView>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ss6-H5-QYJ" firstAttribute="leading" secondItem="cYN-YI-dpi" secondAttribute="leading" constant="20" id="KrR-XJ-3sA"/>
+                                                    <constraint firstItem="JpS-cR-tDb" firstAttribute="leading" secondItem="Ss6-H5-QYJ" secondAttribute="leading" constant="7" id="Lel-d9-t5P"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ss6-H5-QYJ" secondAttribute="bottom" constant="20" id="Pln-ZO-8QC"/>
+                                                    <constraint firstAttribute="height" constant="125" id="dcI-pF-cy8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ss6-H5-QYJ" secondAttribute="trailing" constant="20" id="oNf-Kg-GgL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JpS-cR-tDb" secondAttribute="bottom" constant="10" id="vYJ-hd-AIx"/>
+                                                    <constraint firstItem="Ss6-H5-QYJ" firstAttribute="top" secondItem="cYN-YI-dpi" secondAttribute="top" constant="20" id="yiF-ps-3SL"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="JSJ-mn-QcP" firstAttribute="top" secondItem="869-BO-0TG" secondAttribute="top" constant="20" id="2kh-eG-fJE"/>
-                                            <constraint firstItem="fSu-Dc-KsW" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.05" id="Gyy-wy-JNY"/>
-                                            <constraint firstItem="ysJ-fE-yBZ" firstAttribute="top" secondItem="JSJ-mn-QcP" secondAttribute="bottom" constant="30" id="Mha-lT-fog"/>
-                                            <constraint firstItem="ysJ-fE-yBZ" firstAttribute="leading" secondItem="869-BO-0TG" secondAttribute="leading" constant="40" id="WwH-SM-CV3"/>
-                                            <constraint firstItem="JSJ-mn-QcP" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.2" id="dCr-PQ-Usg"/>
-                                            <constraint firstItem="JSJ-mn-QcP" firstAttribute="centerX" secondItem="869-BO-0TG" secondAttribute="centerX" id="hs8-QP-934"/>
-                                            <constraint firstItem="wzW-y0-rif" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.08" id="ljJ-U7-fL5"/>
-                                            <constraint firstAttribute="trailing" secondItem="ysJ-fE-yBZ" secondAttribute="trailing" constant="40" id="ufd-IE-zUA"/>
+                                            <constraint firstAttribute="trailing" secondItem="F9I-no-3uH" secondAttribute="trailing" constant="20" id="1yV-WT-kfG"/>
+                                            <constraint firstItem="lkD-fT-hQl" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.08" id="4KD-jY-Fqv"/>
+                                            <constraint firstItem="lkD-fT-hQl" firstAttribute="trailing" secondItem="F9I-no-3uH" secondAttribute="trailing" id="5ma-Lh-jVU"/>
+                                            <constraint firstItem="lkD-fT-hQl" firstAttribute="leading" secondItem="F9I-no-3uH" secondAttribute="leading" id="6AB-Nd-cKc"/>
+                                            <constraint firstItem="cYN-YI-dpi" firstAttribute="centerX" secondItem="869-BO-0TG" secondAttribute="centerX" id="AXk-dl-wmZ"/>
+                                            <constraint firstItem="r8S-OI-Ce6" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.07" id="D1B-GQ-E82"/>
+                                            <constraint firstItem="cYN-YI-dpi" firstAttribute="width" secondItem="869-BO-0TG" secondAttribute="width" multiplier="0.4" id="Ky8-tZ-RAf"/>
+                                            <constraint firstItem="cYN-YI-dpi" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.171468" id="dfN-pe-f1C"/>
+                                            <constraint firstItem="F9I-no-3uH" firstAttribute="leading" secondItem="869-BO-0TG" secondAttribute="leading" constant="20" id="hy9-JK-Z1p"/>
+                                            <constraint firstItem="JpS-cR-tDb" firstAttribute="height" secondItem="869-BO-0TG" secondAttribute="height" multiplier="0.055" id="jOA-Vl-biG"/>
+                                            <constraint firstItem="lkD-fT-hQl" firstAttribute="top" secondItem="F9I-no-3uH" secondAttribute="bottom" constant="40" id="kGD-iw-6nm"/>
+                                            <constraint firstItem="F9I-no-3uH" firstAttribute="top" secondItem="cYN-YI-dpi" secondAttribute="bottom" constant="40" id="mR2-rh-A5R"/>
+                                            <constraint firstItem="cYN-YI-dpi" firstAttribute="top" secondItem="869-BO-0TG" secondAttribute="top" constant="20" id="ysI-xx-0do"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1482,12 +1814,14 @@
                     <tabBarItem key="tabBarItem" title="ملفي الشخصي" image="person.fill" catalog="system" id="DLL-hG-GXh"/>
                     <navigationItem key="navigationItem" id="mFy-02-Ikl"/>
                     <connections>
-                        <outlet property="confirmPasswordTF" destination="6Vf-Wi-213" id="aKc-yg-RnN"/>
-                        <outlet property="emailTF" destination="K0X-tb-XzM" id="bMe-Ni-QZz"/>
-                        <outlet property="nameTF" destination="fSu-Dc-KsW" id="JPJ-Pk-iXL"/>
-                        <outlet property="passwordTF" destination="rOa-JU-pQk" id="4b9-74-fIL"/>
-                        <outlet property="personalImage" destination="JSJ-mn-QcP" id="aAh-vn-f7G"/>
-                        <outlet property="phoneTF" destination="0MU-QS-Y2r" id="Oqm-rN-pEY"/>
+                        <outlet property="confirmPasswordTF" destination="bg9-Et-s2T" id="p12-Id-QrK"/>
+                        <outlet property="containerView" destination="cYN-YI-dpi" id="WYM-4P-OlL"/>
+                        <outlet property="emailTF" destination="Lpw-cE-j9U" id="O9R-ZJ-Qi6"/>
+                        <outlet property="imagePicker" destination="JpS-cR-tDb" id="1KK-Hs-C4y"/>
+                        <outlet property="nameTF" destination="fiT-oc-f1j" id="T1f-zh-EPE"/>
+                        <outlet property="passwordTF" destination="CX2-Vx-8sh" id="Fyw-3g-zal"/>
+                        <outlet property="personalImage" destination="Ss6-H5-QYJ" id="Az7-3P-aMg"/>
+                        <outlet property="phoneTF" destination="fiT-oc-f1j" id="fcx-cm-65d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEX-6i-93i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1497,22 +1831,22 @@
         <!--المزيد-->
         <scene sceneID="b6t-sU-aTB">
             <objects>
-                <viewController storyboardIdentifier="MyFollowlistViewController" id="aPS-Qv-OO0" customClass="MyFollowlistViewController" customModule="saudiClubs1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyFollowlistViewController" id="aPS-Qv-OO0" customClass="MyFollowlistViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j7B-if-XlM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9go-PG-rpF" customClass="ViewCorners" customModule="saudiClubs1" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9go-PG-rpF" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
                                 <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vWK-l6-RrL">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="778"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyFollowlistTableViewCell" rowHeight="176" id="jUo-74-MfF" customClass="MyFollowlistTableViewCell" customModule="saudiClubs1" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyFollowlistTableViewCell" rowHeight="176" id="jUo-74-MfF" customClass="MyFollowlistTableViewCell" customModule="saudiClubs" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="374" height="176"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jUo-74-MfF" id="4AX-az-gUj" customClass="MyFollowlistTableViewCell" customModule="saudiClubs1" customModuleProvider="target">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jUo-74-MfF" id="4AX-az-gUj" customClass="MyFollowlistTableViewCell" customModule="saudiClubs" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="176"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
@@ -1594,6 +1928,7 @@
         <image name="bank" width="67" height="66"/>
         <image name="club-logo" width="37" height="44"/>
         <image name="clubs" width="28" height="32"/>
+        <image name="img_edit" width="28" height="28"/>
         <image name="more-vertical" width="20" height="20"/>
         <image name="payment-icon" width="108" height="109"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>

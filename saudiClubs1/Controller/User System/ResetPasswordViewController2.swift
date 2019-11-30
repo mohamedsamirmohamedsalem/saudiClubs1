@@ -14,7 +14,7 @@ class ResetPasswordViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        codeTF.underlined()
+       
     }
     
 

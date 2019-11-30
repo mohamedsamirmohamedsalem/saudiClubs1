@@ -11,25 +11,39 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     
+   
     @IBOutlet var personalImage: UIImageView!
+    @IBOutlet var imagePicker: UIButton!
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneTF: UITextField!
     @IBOutlet var emailTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var confirmPasswordTF: UITextField!
     
+    @IBOutlet var containerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTF.underlined()
-        phoneTF.underlined()
-        emailTF.underlined()
-        passwordTF.underlined()
-        confirmPasswordTF.underlined()
+       nameTF.padding(nameTF)
+           phoneTF.padding(phoneTF)
+           emailTF.padding(emailTF)
+           passwordTF.padding(passwordTF)
+           confirmPasswordTF.padding(confirmPasswordTF)
     
     }
+    override func viewDidLayoutSubviews() {
+        
     
+        
+         containerView.layer.cornerRadius = containerView.frame.height / 2
+         personalImage.layer.cornerRadius = personalImage.frame.height / 2
+         personalImage.clipsToBounds = true
+         imagePicker.layer.cornerRadius = imagePicker.frame.height / 2
+     }
     
     //MARK :- IBActions
+    @IBAction func imagePicker(_ sender: UIButton) {
+        print("update image button clicked")
+    }
     @IBAction func updateDetails(_ sender: UIButton) {
         self.view.endEditing(true)
         if let name = nameTF.text , let phone = phoneTF.text , let password = passwordTF.text , let confirmPassword = confirmPasswordTF.text , let email = emailTF.text {

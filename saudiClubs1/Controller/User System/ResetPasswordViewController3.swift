@@ -19,8 +19,7 @@ class ResetPasswordViewController3: UIViewController {
         super.viewDidLoad()
         
        
-        NewPasswordTF.underlined()
-        confirmNewPasswordTF.underlined()
+      
        
     }
     

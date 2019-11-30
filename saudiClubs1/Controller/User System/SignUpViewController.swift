@@ -21,11 +21,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameTF.underlined()
-        phoneTF.underlined()
-        ConfirmPasswordTF.underlined()
-        passwordTF.underlined()
-        emailTF.underlined()
+    
         
     }
     //MARK :- IBActions

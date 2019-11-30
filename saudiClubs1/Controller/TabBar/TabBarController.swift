@@ -10,13 +10,12 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    @IBOutlet var TabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+       
+        
     }
-    
-
-
 
 }

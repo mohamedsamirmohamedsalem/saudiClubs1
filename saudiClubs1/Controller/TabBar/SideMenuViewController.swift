@@ -8,55 +8,36 @@
 
 import UIKit
 
-class SideMenuViewController: UIViewController {
+class SideMenuViewController: UIViewController , UITabBarControllerDelegate  {
 
 
     @IBOutlet var personalImage: UIImageView!
-    @IBOutlet var TableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      TableView.delegate = self
-            TableView.dataSource = self
-            // delete seprated lines after end of table lines
-            TableView.tableFooterView = UIView()
+        
+  
     }
     
+    @IBAction func sideMenuButtons(_ sender: UIButton) {
+        if sender.tag == 1 {
 
-}
-
-extension SideMenuViewController : UITableViewDelegate , UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
-    }
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-               let cell = tableView.dequeueReusableCell(withIdentifier: "SideMenuTableViewCell") as! SideMenuTableViewCell
-            cell.sideMenuLabel.text = cell.sideMenuText[indexPath.row]
+        }else if sender.tag == 2 {
             
-               return cell
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return SCREEN_HEIGHT / 15
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-           
-        }else if indexPath.row == 1 {
+        }else if sender.tag == 3 {
             
-        }else if indexPath.row == 2 {
-              let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MyFollowlistViewController") as! MyFollowlistViewController
-                            self.present(storyBoard, animated: true, completion: nil)
-        }else if indexPath.row == 3 {
-          
-        }else if indexPath.row == 4 {
-           
-        }else if indexPath.row == 5 {
-           
-        }else if indexPath.row == 6 {
-           
-        }else{
-            print("Unknown Error")
+        }else if sender.tag == 4 {
+            
+        }else if sender.tag == 5 {
+            
+        }else if sender.tag == 6 {
+            
+        }else if sender.tag == 7 {
+            
+        }else {
+            print("======>>Unknown Error")
         }
+        
     }
+    
 }
