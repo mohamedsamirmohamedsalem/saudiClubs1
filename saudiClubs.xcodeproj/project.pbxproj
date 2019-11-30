@@ -255,7 +255,7 @@
 		60318E45238D17ED00F2C3AB = {
 			isa = PBXGroup;
 			children = (
-				60318E50238D17ED00F2C3AB /* saudiClubs1 */,
+				60318E50238D17ED00F2C3AB /* saudiClubs */,
 				60318E4F238D17ED00F2C3AB /* Products */,
 				C3751E47EA43BF0201249A22 /* Pods */,
 				EC00478021884F09D70DFB3E /* Frameworks */,
@@ -270,7 +270,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		60318E50238D17ED00F2C3AB /* saudiClubs1 */ = {
+		60318E50238D17ED00F2C3AB /* saudiClubs */ = {
 			isa = PBXGroup;
 			children = (
 				60318E68238D181A00F2C3AB /* Supporting Files */,
@@ -282,7 +282,7 @@
 				60318E66238D180200F2C3AB /* View */,
 				60318E65238D17FF00F2C3AB /* Controller */,
 			);
-			path = saudiClubs1;
+			path = saudiClubs;
 			sourceTree = "<group>";
 		};
 		60318E65238D17FF00F2C3AB /* Controller */ = {
@@ -699,7 +699,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89LNLGMUPU;
-				INFOPLIST_FILE = "saudiClubs1/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "saudiClubs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -718,7 +718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89LNLGMUPU;
-				INFOPLIST_FILE = "saudiClubs1/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "saudiClubs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

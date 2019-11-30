@@ -26,12 +26,6 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
-       nameTF.padding(nameTF)
-           phoneTF.padding(phoneTF)
-           emailTF.padding(emailTF)
-           passwordTF.padding(passwordTF)
-           confirmPasswordTF.padding(confirmPasswordTF)
-    
     }
     override func viewDidLayoutSubviews() {
         
