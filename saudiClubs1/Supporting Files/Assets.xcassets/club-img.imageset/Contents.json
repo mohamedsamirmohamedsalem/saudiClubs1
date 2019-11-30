@@ -1,0 +1,23 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : "1"
+  },
+  "images" : [
+    {
+      "scale" : "1x",
+      "filename" : "club-img.png",
+      "idiom" : "universal"
+    },
+    {
+      "scale" : "2x",
+      "filename" : "club-img@2x.png",
+      "idiom" : "universal"
+    },
+    {
+      "scale" : "3x",
+      "filename" : "club-img@3x.png",
+      "idiom" : "universal"
+    }
+  ]
+}

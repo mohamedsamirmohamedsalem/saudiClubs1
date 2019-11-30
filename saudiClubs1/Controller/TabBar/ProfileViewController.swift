@@ -8,21 +8,24 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController,UINavigationControllerDelegate {
 
-    
+     let imagePicker = UIImagePickerController()
    
     @IBOutlet var personalImage: UIImageView!
-    @IBOutlet var imagePicker: UIButton!
+    @IBOutlet var imagePickerBut: UIButton!
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneTF: UITextField!
     @IBOutlet var emailTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var confirmPasswordTF: UITextField!
     
+   
+    
     @IBOutlet var containerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
        nameTF.padding(nameTF)
            phoneTF.padding(phoneTF)
            emailTF.padding(emailTF)
@@ -37,12 +40,16 @@ class ProfileViewController: UIViewController {
          containerView.layer.cornerRadius = containerView.frame.height / 2
          personalImage.layer.cornerRadius = personalImage.frame.height / 2
          personalImage.clipsToBounds = true
-         imagePicker.layer.cornerRadius = imagePicker.frame.height / 2
+         imagePickerBut.layer.cornerRadius = imagePickerBut.frame.height / 2
      }
     
     //MARK :- IBActions
-    @IBAction func imagePicker(_ sender: UIButton) {
+    @IBAction func imagePickerBut(_ sender: UIButton) {
         print("update image button clicked")
+               imagePicker.sourceType = .photoLibrary
+        //        imagePicker.allowsEditing = true
+                
+                self.present(imagePicker, animated: true, completion: nil)
     }
     @IBAction func updateDetails(_ sender: UIButton) {
         self.view.endEditing(true)
@@ -92,3 +99,19 @@ class ProfileViewController: UIViewController {
     }
 
 }
+
+
+extension ProfileViewController :UIImagePickerControllerDelegate{
+    
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let pickerImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            
+            personalImage.image = pickerImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
+}
+
