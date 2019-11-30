@@ -16,6 +16,7 @@ class MyFollowlistViewController: UIViewController {
         super.viewDidLoad()
         TableView.delegate = self
         TableView.dataSource = self
+        TableView.RegisterNib(Cell: MyFollwlisrTableViewCell.self)
         TableView.tableFooterView = UIView()
 
     }
@@ -29,7 +30,7 @@ extension MyFollowlistViewController : UITableViewDelegate , UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyFollowlistTableViewCell") as! MyFollowlistTableViewCell
+        let cell = tableView.dequeue(IndexPath: indexPath) as MyFollwlisrTableViewCell
         return cell
     }
     

@@ -4,6 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>CairoRegular.ttf</string>
+		<string>CairoExtraLight.ttf</string>
+		<string>CairoLight.ttf</string>
+		<string>CairoBlack.ttf</string>
 		<string>CairoBold.ttf</string>
 		<string>CairoSemiBold.ttf</string>
 	</array>

@@ -1,14 +1,14 @@
 //
-//  MyFollowlistTableViewCell.swift
-//  saudiClubs1
+//  MyFollwlisrTableViewCell.swift
+//  saudiClubs
 //
-//  Created by Mohamed Samir on 11/28/19.
+//  Created by Mohamed Samir on 11/30/19.
 //  Copyright © 2019 Mohamed Samir. All rights reserved.
 //
 
 import UIKit
 
-class MyFollowlistTableViewCell: UITableViewCell {
+class MyFollwlisrTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -16,5 +16,5 @@ class MyFollowlistTableViewCell: UITableViewCell {
     }
 
 
-
+    
 }
