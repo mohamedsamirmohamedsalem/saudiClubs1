@@ -25,13 +25,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beq-IJ-5sK" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
-                        <rect key="frame" x="10" y="15" width="535" height="330"/>
+                        <rect key="frame" x="10" y="10" width="535" height="340"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hXL-BE-CyE">
-                                <rect key="frame" x="10" y="5" width="515" height="320"/>
+                                <rect key="frame" x="10" y="10" width="515" height="325"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h48-Dc-hNU">
-                                        <rect key="frame" x="0.0" y="0.0" width="515" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="515" height="68.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-2a-HJM">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="37"/>
@@ -64,10 +64,10 @@
                                         </subviews>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club-img" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-ck-f3L" customClass="ImageCorners" customModule="saudiClubs" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="73.5" width="515" height="180"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="515" height="180"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JeL-ze-iyh">
-                                        <rect key="frame" x="0.0" y="263.5" width="515" height="56.5"/>
+                                        <rect key="frame" x="0.0" y="268.5" width="515" height="56.5"/>
                                         <string key="text">سنة التآسيس : 1957 ميلادية - 1376 هجرية
  رياضات والعاب : كرة القدم ، كرة اليد ، السباحة ، تنس الطاولة الرماية</string>
                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
@@ -80,7 +80,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hXL-BE-CyE" secondAttribute="bottom" constant="5" id="I6U-Rz-gmZ"/>
-                            <constraint firstItem="hXL-BE-CyE" firstAttribute="top" secondItem="beq-IJ-5sK" secondAttribute="top" constant="5" id="UcU-mI-wA4"/>
+                            <constraint firstItem="hXL-BE-CyE" firstAttribute="top" secondItem="beq-IJ-5sK" secondAttribute="top" constant="10" id="UcU-mI-wA4"/>
                             <constraint firstAttribute="trailing" secondItem="hXL-BE-CyE" secondAttribute="trailing" constant="10" id="bZh-gC-fQT"/>
                             <constraint firstItem="hXL-BE-CyE" firstAttribute="leading" secondItem="beq-IJ-5sK" secondAttribute="leading" constant="10" id="nv8-ck-gv4"/>
                         </constraints>
@@ -107,11 +107,11 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="beq-IJ-5sK" secondAttribute="bottom" constant="15" id="3Uw-DR-n3H"/>
+                    <constraint firstAttribute="bottom" secondItem="beq-IJ-5sK" secondAttribute="bottom" constant="10" id="3Uw-DR-n3H"/>
                     <constraint firstItem="beq-IJ-5sK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ja4-SL-aDR"/>
                     <constraint firstAttribute="trailing" secondItem="beq-IJ-5sK" secondAttribute="trailing" constant="10" id="KO9-4d-ffM"/>
                     <constraint firstItem="fkb-ck-f3L" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="XNK-tU-G7m"/>
-                    <constraint firstItem="beq-IJ-5sK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="hB8-jO-NYr"/>
+                    <constraint firstItem="beq-IJ-5sK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hB8-jO-NYr"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
