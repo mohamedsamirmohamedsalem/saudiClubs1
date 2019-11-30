@@ -11,6 +11,16 @@
 		6012CC2A238D502200DEB61E /* ResetPasswordViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */; };
 		601342A2238D44B900B8560C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601342A1238D44B900B8560C /* SignUpViewController.swift */; };
 		601435422391AFAD0045348A /* CairoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601435412391AFAC0045348A /* CairoBold.ttf */; };
+		601522662392A6450022EA8F /* ClubsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601522652392A6450022EA8F /* ClubsListViewController.swift */; };
+		6015226A2392AB3D0022EA8F /* ClubsListMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601522682392AB3D0022EA8F /* ClubsListMainTableViewCell.swift */; };
+		6015226B2392AB3D0022EA8F /* ClubsListMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601522692392AB3D0022EA8F /* ClubsListMainTableViewCell.xib */; };
+		6015226F2392AE100022EA8F /* SliderMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6015226D2392AE100022EA8F /* SliderMainCollectionViewCell.swift */; };
+		601522702392AE100022EA8F /* SliderMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6015226E2392AE100022EA8F /* SliderMainCollectionViewCell.xib */; };
+		601522742392B2390022EA8F /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601522722392B2390022EA8F /* SliderCollectionViewCell.swift */; };
+		601522752392B2390022EA8F /* SliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601522732392B2390022EA8F /* SliderCollectionViewCell.xib */; };
+		601522792392B2F40022EA8F /* ClubsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601522772392B2F40022EA8F /* ClubsListTableViewCell.swift */; };
+		6015227A2392B2F40022EA8F /* ClubsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601522782392B2F40022EA8F /* ClubsListTableViewCell.xib */; };
+		6015227C2392C0930022EA8F /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6015227B2392C0930022EA8F /* Inspectables.swift */; };
 		6015E932239254A100A4BE91 /* MyFollwlisrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6015E930239254A100A4BE91 /* MyFollwlisrTableViewCell.swift */; };
 		6015E933239254A100A4BE91 /* MyFollwlisrTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6015E931239254A100A4BE91 /* MyFollwlisrTableViewCell.xib */; };
 		6015E9362392608300A4BE91 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6015E9352392608300A4BE91 /* AboutAppViewController.swift */; };
@@ -59,6 +69,16 @@
 		6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController1.swift; sourceTree = "<group>"; };
 		601342A1238D44B900B8560C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		601435412391AFAC0045348A /* CairoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CairoBold.ttf; sourceTree = "<group>"; };
+		601522652392A6450022EA8F /* ClubsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsListViewController.swift; sourceTree = "<group>"; };
+		601522682392AB3D0022EA8F /* ClubsListMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsListMainTableViewCell.swift; sourceTree = "<group>"; };
+		601522692392AB3D0022EA8F /* ClubsListMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubsListMainTableViewCell.xib; sourceTree = "<group>"; };
+		6015226D2392AE100022EA8F /* SliderMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		6015226E2392AE100022EA8F /* SliderMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		601522722392B2390022EA8F /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		601522732392B2390022EA8F /* SliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		601522772392B2F40022EA8F /* ClubsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsListTableViewCell.swift; sourceTree = "<group>"; };
+		601522782392B2F40022EA8F /* ClubsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubsListTableViewCell.xib; sourceTree = "<group>"; };
+		6015227B2392C0930022EA8F /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
 		6015E930239254A100A4BE91 /* MyFollwlisrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFollwlisrTableViewCell.swift; sourceTree = "<group>"; };
 		6015E931239254A100A4BE91 /* MyFollwlisrTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFollwlisrTableViewCell.xib; sourceTree = "<group>"; };
 		6015E9352392608300A4BE91 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +134,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601522672392AAF00022EA8F /* ClubsListMainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				601522682392AB3D0022EA8F /* ClubsListMainTableViewCell.swift */,
+				601522692392AB3D0022EA8F /* ClubsListMainTableViewCell.xib */,
+			);
+			path = ClubsListMainTableViewCell;
+			sourceTree = "<group>";
+		};
+		6015226C2392AC360022EA8F /* SliderMainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6015226D2392AE100022EA8F /* SliderMainCollectionViewCell.swift */,
+				6015226E2392AE100022EA8F /* SliderMainCollectionViewCell.xib */,
+			);
+			path = SliderMainTableViewCell;
+			sourceTree = "<group>";
+		};
+		601522712392B1CC0022EA8F /* SliderSingleCell */ = {
+			isa = PBXGroup;
+			children = (
+				601522722392B2390022EA8F /* SliderCollectionViewCell.swift */,
+				601522732392B2390022EA8F /* SliderCollectionViewCell.xib */,
+			);
+			path = SliderSingleCell;
+			sourceTree = "<group>";
+		};
+		601522762392B2B50022EA8F /* ClubsListCell */ = {
+			isa = PBXGroup;
+			children = (
+				601522772392B2F40022EA8F /* ClubsListTableViewCell.swift */,
+				601522782392B2F40022EA8F /* ClubsListTableViewCell.xib */,
+			);
+			path = ClubsListCell;
+			sourceTree = "<group>";
+		};
 		6015E93423925A9500A4BE91 /* MyFollwlisrTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +179,7 @@
 			path = MyFollwlisrTableViewCell;
 			sourceTree = "<group>";
 		};
-		6019F195238FAA38005BE346 /* User System */ = {
+		6019F195238FAA38005BE346 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				60318E55238D17ED00F2C3AB /* SplashViewController.swift */,
@@ -133,7 +189,7 @@
 				6017B593238D7528007DC459 /* ResetPasswordViewController2.swift */,
 				6018E9EA238E5D3C00223203 /* ResetPasswordViewController3.swift */,
 			);
-			path = "User System";
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		6019F196238FAA47005BE346 /* Payement */ = {
@@ -152,6 +208,7 @@
 				601BA8AB238FC1D6008F6A96 /* TabBarController.swift */,
 				601BA8AE238FC729008F6A96 /* SideMenuViewController.swift */,
 				601BA8B6238FDB3F008F6A96 /* ProfileViewController.swift */,
+				601522652392A6450022EA8F /* ClubsListViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -231,7 +288,7 @@
 		60318E65238D17FF00F2C3AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6019F195238FAA38005BE346 /* User System */,
+				6019F195238FAA38005BE346 /* Authentication */,
 				6019F196238FAA47005BE346 /* Payement */,
 				601BA8AA238FC199008F6A96 /* TabBar */,
 			);
@@ -243,6 +300,10 @@
 			children = (
 				60318E57238D17ED00F2C3AB /* Main.storyboard */,
 				6015E93423925A9500A4BE91 /* MyFollwlisrTableViewCell */,
+				6015226C2392AC360022EA8F /* SliderMainTableViewCell */,
+				601522712392B1CC0022EA8F /* SliderSingleCell */,
+				601522672392AAF00022EA8F /* ClubsListMainTableViewCell */,
+				601522762392B2B50022EA8F /* ClubsListCell */,
 				601BA8B0238FC955008F6A96 /* Cells */,
 			);
 			path = View;
@@ -260,6 +321,7 @@
 			children = (
 				60318E51238D17ED00F2C3AB /* AppDelegate.swift */,
 				60318E53238D17ED00F2C3AB /* SceneDelegate.swift */,
+				6015227B2392C0930022EA8F /* Inspectables.swift */,
 				60318E5A238D17EF00F2C3AB /* Assets.xcassets */,
 				60318E5C238D17EF00F2C3AB /* LaunchScreen.storyboard */,
 				60318E5F238D17EF00F2C3AB /* Info.plist */,
@@ -388,11 +450,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6015E93E2392622800A4BE91 /* CairoLight.ttf in Resources */,
+				601522752392B2390022EA8F /* SliderCollectionViewCell.xib in Resources */,
 				601F5CE423915CE400DF1BE6 /* CairoSemiBold.ttf in Resources */,
+				6015226B2392AB3D0022EA8F /* ClubsListMainTableViewCell.xib in Resources */,
 				6015E93B2392622800A4BE91 /* CairoRegular.ttf in Resources */,
+				601522702392AE100022EA8F /* SliderMainCollectionViewCell.xib in Resources */,
 				601435422391AFAD0045348A /* CairoBold.ttf in Resources */,
 				6015E93C2392622800A4BE91 /* CairoBlack.ttf in Resources */,
 				6015E93D2392622800A4BE91 /* CairoExtraLight.ttf in Resources */,
+				6015227A2392B2F40022EA8F /* ClubsListTableViewCell.xib in Resources */,
 				60318E5E238D17EF00F2C3AB /* LaunchScreen.storyboard in Resources */,
 				60318E5B238D17EF00F2C3AB /* Assets.xcassets in Resources */,
 				6015E933239254A100A4BE91 /* MyFollwlisrTableViewCell.xib in Resources */,
@@ -449,18 +515,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601522662392A6450022EA8F /* ClubsListViewController.swift in Sources */,
 				601BA8B5238FD3AE008F6A96 /* Constants.swift in Sources */,
 				60318E7F238D1EA800F2C3AB /* TextFiledAnimation.swift in Sources */,
 				6015E94223926D7400A4BE91 /* AppTermsViewController.swift in Sources */,
+				6015226F2392AE100022EA8F /* SliderMainCollectionViewCell.swift in Sources */,
 				6011CA4C238E995B00EDDDEC /* completePaymentViewController.swift in Sources */,
 				6018E9ED238E64B500223203 /* selectPaymentViewController.swift in Sources */,
 				60318E7A238D1EA800F2C3AB /* TableViewCorners.swift in Sources */,
 				6015E932239254A100A4BE91 /* MyFollwlisrTableViewCell.swift in Sources */,
+				6015226A2392AB3D0022EA8F /* ClubsListMainTableViewCell.swift in Sources */,
 				60A8C5182391DDD500ED056B /* UICollectionView+Generics.swift in Sources */,
 				60318E7D238D1EA800F2C3AB /* ButtonAnimation.swift in Sources */,
 				6096EAC4238EA43B00C9B1FA /* ViewDashedBorder.swift in Sources */,
 				6018E9EB238E5D3C00223203 /* ResetPasswordViewController3.swift in Sources */,
 				6015E9402392684A00A4BE91 /* ContactUsViewController.swift in Sources */,
+				601522742392B2390022EA8F /* SliderCollectionViewCell.swift in Sources */,
+				601522792392B2F40022EA8F /* ClubsListTableViewCell.swift in Sources */,
 				601BA8BE238FEF7C008F6A96 /* MyFollowlistViewController.swift in Sources */,
 				60318E6A238D19C900F2C3AB /* LoginViewController.swift in Sources */,
 				601BA8B7238FDB3F008F6A96 /* ProfileViewController.swift in Sources */,
@@ -468,6 +539,7 @@
 				60A8C5192391DDD500ED056B /* UITableView+Generics.swift in Sources */,
 				60318E7B238D1EA800F2C3AB /* TextFieldCorners.swift in Sources */,
 				60318E7C238D1EA800F2C3AB /* ViewCorners.swift in Sources */,
+				6015227C2392C0930022EA8F /* Inspectables.swift in Sources */,
 				60318E77238D1EA800F2C3AB /* ButtonCorners.swift in Sources */,
 				60318E79238D1EA800F2C3AB /* LabelCorners.swift in Sources */,
 				601BA8AC238FC1D6008F6A96 /* TabBarController.swift in Sources */,
