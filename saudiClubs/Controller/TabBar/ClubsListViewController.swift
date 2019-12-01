@@ -38,6 +38,12 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
         let cell = tableView.dequeue(IndexPath: indexPath) as ClubsListTableViewCell
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ClubsListDetailsViewController") as! ClubsListDetailsViewController
+//        present(storyBoard, animated: true, completion: nil)
+        performSegue(withIdentifier: "ClubsListDetailsViewController", sender: self)
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if SCREEN_HEIGHT == 667{ //iPhone 8 /iPhone 7 /iPhone 6 / iPhone 6s
             return SCREEN_HEIGHT / 2.6
