@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yu1-zv-9Gh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QcX-wi-G87">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273.913043478261" y="123.88392857142857"/>
+            <point key="canvasLocation" x="2184.057971014493" y="123.88392857142857"/>
         </scene>
         <!--on-->
         <scene sceneID="JWi-mc-er4">
@@ -212,9 +212,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rB-ov-KV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047.826086956522" y="123.88392857142857"/>
+            <point key="canvasLocation" x="2957.971014492754" y="123.88392857142857"/>
         </scene>
-        <!--Clubs List View Controller-->
+        <!--الأنديه-->
         <scene sceneID="vSm-zV-qtF">
             <objects>
                 <viewController id="Lk5-aJ-BGE" customClass="ClubsListViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,15 +222,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="LsU-Va-YHa">
-                                <rect key="frame" x="20" y="98" width="384" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsU-Va-YHa">
+                                <rect key="frame" x="20" y="54" width="384" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZG-dF-mO1">
-                                        <rect key="frame" x="0.0" y="0.0" width="21" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="21" height="56"/>
                                         <state key="normal" image="alerts"/>
                                     </button>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-Qi-Dmi">
+                                        <rect key="frame" x="21" y="0.0" width="181" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تطبيق الاندية السعودية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjU-ll-XGb">
-                                        <rect key="frame" x="202" y="0.0" width="182" height="32"/>
+                                        <rect key="frame" x="202" y="0.0" width="182" height="56"/>
                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -238,26 +242,17 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiK-f3-OL0" customClass="ViewCorners" customModule="saudiClubs" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="120" width="414" height="693"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Clp-E0-eT2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </searchBar>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j7J-qO-Bk3">
-                                        <rect key="frame" x="5" y="66" width="404" height="602"/>
+                                        <rect key="frame" x="5" y="0.0" width="404" height="688"/>
                                         <color key="backgroundColor" red="0.96713309657033486" green="0.96562128006571479" blue="0.99202894869585256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="j7J-qO-Bk3" firstAttribute="top" secondItem="Clp-E0-eT2" secondAttribute="bottom" constant="10" id="4CW-9O-eeP"/>
-                                    <constraint firstAttribute="trailing" secondItem="Clp-E0-eT2" secondAttribute="trailing" id="Lmo-4C-YLd"/>
                                     <constraint firstAttribute="bottom" secondItem="j7J-qO-Bk3" secondAttribute="bottom" constant="5" id="Nie-1J-SdD"/>
-                                    <constraint firstItem="Clp-E0-eT2" firstAttribute="leading" secondItem="jiK-f3-OL0" secondAttribute="leading" id="OTa-hm-e7e"/>
-                                    <constraint firstItem="Clp-E0-eT2" firstAttribute="top" secondItem="jiK-f3-OL0" secondAttribute="top" id="TnW-eO-lBe"/>
-                                    <constraint firstItem="j7J-qO-Bk3" firstAttribute="top" secondItem="Clp-E0-eT2" secondAttribute="bottom" constant="10" id="dYW-Ap-qU1"/>
+                                    <constraint firstItem="j7J-qO-Bk3" firstAttribute="top" secondItem="jiK-f3-OL0" secondAttribute="top" id="eir-Ji-ftQ"/>
                                     <constraint firstAttribute="trailing" secondItem="j7J-qO-Bk3" secondAttribute="trailing" constant="5" id="jgK-le-TyK"/>
                                     <constraint firstItem="j7J-qO-Bk3" firstAttribute="leading" secondItem="jiK-f3-OL0" secondAttribute="leading" constant="5" id="mCK-UM-Wqr"/>
                                 </constraints>
@@ -269,33 +264,34 @@
                             <constraint firstItem="7Zr-LY-Vdo" firstAttribute="trailing" secondItem="jiK-f3-OL0" secondAttribute="trailing" id="JtC-6E-anf"/>
                             <constraint firstItem="jiK-f3-OL0" firstAttribute="top" secondItem="LsU-Va-YHa" secondAttribute="bottom" constant="10" id="M8K-Ri-EkK"/>
                             <constraint firstItem="LsU-Va-YHa" firstAttribute="top" secondItem="7Zr-LY-Vdo" secondAttribute="top" constant="10" id="Yc4-hk-aiy"/>
+                            <constraint firstItem="vQw-Qi-Dmi" firstAttribute="width" secondItem="Hj4-YF-rlb" secondAttribute="width" multiplier="0.437198" id="aVu-9i-SnW"/>
                             <constraint firstItem="7Zr-LY-Vdo" firstAttribute="trailing" secondItem="LsU-Va-YHa" secondAttribute="trailing" constant="10" id="fV4-fT-zz1"/>
                             <constraint firstItem="jiK-f3-OL0" firstAttribute="leading" secondItem="7Zr-LY-Vdo" secondAttribute="leading" id="jnl-f6-cPV"/>
                             <constraint firstItem="LsU-Va-YHa" firstAttribute="leading" secondItem="7Zr-LY-Vdo" secondAttribute="leading" constant="20" id="t5H-mJ-A8e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Zr-LY-Vdo"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="الأنديه" image="clubs" id="SEI-85-NAe"/>
                     <navigationItem key="navigationItem" id="Vah-lM-Wv5"/>
                     <connections>
-                        <outlet property="SearchBar" destination="Clp-E0-eT2" id="zg0-uj-Xsi"/>
                         <outlet property="TableView" destination="j7J-qO-Bk3" id="hLm-Yg-KrC"/>
                         <segue destination="OC3-Zf-xcj" kind="show" identifier="ClubsListDetailsViewController" id="PSd-RA-3Tb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XB4-Od-oSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4455.072463768116" y="1605.8035714285713"/>
+            <point key="canvasLocation" x="3509" y="1606"/>
         </scene>
-        <!--Clubs List Details View Controller-->
+        <!--Item-->
         <scene sceneID="zE9-G4-aXd">
             <objects>
                 <viewController storyboardIdentifier="ClubsListDetailsViewController" id="OC3-Zf-xcj" customClass="ClubsListDetailsViewController" customModule="saudiClubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWf-gk-WPa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3RX-sr-JAk">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -308,6 +304,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0xr-EL-4wy"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="clubs" id="juq-pY-U9z"/>
                     <navigationItem key="navigationItem" id="YIX-pz-gYb"/>
                     <connections>
                         <outlet property="TableView" destination="3RX-sr-JAk" id="VMt-zS-5eh"/>
@@ -315,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWI-hy-Z4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5273.913043478261" y="1612.5"/>
+            <point key="canvasLocation" x="4386" y="1615"/>
         </scene>
         <!--المزيد-->
         <scene sceneID="R8A-eP-klJ">
@@ -571,7 +568,7 @@
                         <outlet property="TabBar" destination="u10-MP-HWl" id="OP4-OL-6LI"/>
                         <segue destination="yu1-zv-9Gh" kind="relationship" relationship="viewControllers" id="gCQ-6Z-psw"/>
                         <segue destination="Wua-qm-AOI" kind="relationship" relationship="viewControllers" id="HDG-Cd-e8e"/>
-                        <segue destination="9x0-qF-vhF" kind="relationship" relationship="viewControllers" id="JWG-8v-2hz"/>
+                        <segue destination="Lk5-aJ-BGE" kind="relationship" relationship="viewControllers" id="Yet-i9-iV9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPt-eo-7qY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -790,7 +787,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iP-mt-d0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886.9565217391305" y="123.88392857142857"/>
+            <point key="canvasLocation" x="3797.1014492753625" y="123.88392857142857"/>
         </scene>
         <!--Reset Password View Controller1-->
         <scene sceneID="N60-tL-2S8">
@@ -940,7 +937,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggo-v9-4ss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3708.6956521739135" y="123.88392857142857"/>
+            <point key="canvasLocation" x="4618.840579710145" y="123.88392857142857"/>
         </scene>
         <!--Reset Password View Controller2-->
         <scene sceneID="ffz-Xz-gCd">
@@ -1088,7 +1085,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyU-MI-cmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4418.840579710145" y="123.88392857142857"/>
+            <point key="canvasLocation" x="5328.985507246377" y="123.88392857142857"/>
         </scene>
         <!--Reset Password View Controller3-->
         <scene sceneID="uPf-CP-7QG">
@@ -1258,7 +1255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0c1-v9-nST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5183" y="124"/>
+            <point key="canvasLocation" x="6092.753623188406" y="123.88392857142857"/>
         </scene>
         <!--Select Payment View Controller-->
         <scene sceneID="rkV-rs-7ed">
@@ -1520,7 +1517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8h1-Ts-pXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5881.1594202898559" y="122.54464285714285"/>
+            <point key="canvasLocation" x="6791.3043478260879" y="122.54464285714285"/>
         </scene>
         <!--Complete Payment View Controller-->
         <scene sceneID="p2h-lg-r46">
@@ -1725,7 +1722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8m-uz-R3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6634.7826086956529" y="122.54464285714285"/>
+            <point key="canvasLocation" x="7544.9275362318849" y="122.54464285714285"/>
         </scene>
         <!--ملفي الشخصي-->
         <scene sceneID="uJ2-1j-ab1">
@@ -2277,26 +2274,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg2-dA-hv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3510" y="2285"/>
-        </scene>
-        <!--الاندية-->
-        <scene sceneID="mhU-hl-ajY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9x0-qF-vhF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="الاندية" image="clubs" id="u9d-yJ-LKW"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a6S-hQ-jLk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431372550000003" green="0.72156862749999995" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Lk5-aJ-BGE" kind="relationship" relationship="rootViewController" id="U3l-KD-LeD"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rBH-he-Cai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3544.9275362318845" y="1605.8035714285713"/>
         </scene>
     </scenes>
     <resources>

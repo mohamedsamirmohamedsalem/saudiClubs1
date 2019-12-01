@@ -10,9 +10,15 @@ import UIKit
 
 class ButtonsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var CollectionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        CollectionLabel.cornerRadius = 20
+        CollectionLabel.clipsToBounds = true
     }
 
+    @IBAction func buttonAction(_ sender: UIButton) {
+        print("=============")
+    }
 }

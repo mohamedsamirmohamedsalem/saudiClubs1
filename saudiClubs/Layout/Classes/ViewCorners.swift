@@ -16,6 +16,6 @@ import UIKit
     
     override func layoutSubviews() {
             super.layoutSubviews()
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 10
     }
 }

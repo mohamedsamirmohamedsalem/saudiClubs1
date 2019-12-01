@@ -14,18 +14,16 @@ class ClubsListDetailsViewController : UIViewController {
     @IBOutlet var TableView: UITableView!
     override func viewDidLoad() {
           super.viewDidLoad()
-          
-         
+    
           TableView.delegate = self
           TableView.dataSource = self
-      
           setTableView()
           
       }
       
       func setTableView(){
           
-          TableView.estimatedRowHeight = 100
+         // TableView.estimatedRowHeight = 100
           TableView.rowHeight = UITableView.automaticDimension
           TableView.backgroundColor = UIColor.clear
           

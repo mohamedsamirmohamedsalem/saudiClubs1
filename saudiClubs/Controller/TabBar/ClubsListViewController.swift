@@ -17,10 +17,10 @@ class ClubsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    SearchBar.delegate = self
+   // SearchBar.delegate = self
          TableView.delegate = self
          TableView.dataSource = self
-      SearchBar.backgroundImage = UIImage()
+//      SearchBar.backgroundImage = UIImage()
         TableView.RegisterNib(Cell: ClubsListTableViewCell.self)
     }
     
@@ -40,9 +40,9 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ClubsListDetailsViewController") as! ClubsListDetailsViewController
-//        present(storyBoard, animated: true, completion: nil)
-        performSegue(withIdentifier: "ClubsListDetailsViewController", sender: self)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ClubsListDetailsViewController") as! ClubsListDetailsViewController
+        present(storyBoard, animated: true, completion: nil)
+  
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if SCREEN_HEIGHT == 667{ //iPhone 8 /iPhone 7 /iPhone 6 / iPhone 6s

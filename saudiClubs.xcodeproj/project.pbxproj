@@ -10,6 +10,7 @@
 		6011CA4C238E995B00EDDDEC /* completePaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011CA4B238E995B00EDDDEC /* completePaymentViewController.swift */; };
 		6012CC2A238D502200DEB61E /* ResetPasswordViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */; };
 		601342A2238D44B900B8560C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601342A1238D44B900B8560C /* SignUpViewController.swift */; };
+		60136A1B239414ED009C88F1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60136A1A239414ED009C88F1 /* Home.swift */; };
 		601435422391AFAD0045348A /* CairoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601435412391AFAC0045348A /* CairoBold.ttf */; };
 		601522662392A6450022EA8F /* ClubsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601522652392A6450022EA8F /* ClubsListViewController.swift */; };
 		6015226A2392AB3D0022EA8F /* ClubsListMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601522682392AB3D0022EA8F /* ClubsListMainTableViewCell.swift */; };
@@ -78,6 +79,7 @@
 		6011CA4B238E995B00EDDDEC /* completePaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = completePaymentViewController.swift; sourceTree = "<group>"; };
 		6012CC29238D502200DEB61E /* ResetPasswordViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController1.swift; sourceTree = "<group>"; };
 		601342A1238D44B900B8560C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		60136A1A239414ED009C88F1 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		601435412391AFAC0045348A /* CairoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CairoBold.ttf; sourceTree = "<group>"; };
 		601522652392A6450022EA8F /* ClubsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsListViewController.swift; sourceTree = "<group>"; };
 		601522682392AB3D0022EA8F /* ClubsListMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsListMainTableViewCell.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 		60318E67238D180700F2C3AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60136A1A239414ED009C88F1 /* Home.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				6039C1E02393CA2200F14CB9 /* SingleCollectionViewCell.swift in Sources */,
 				60318E7D238D1EA800F2C3AB /* ButtonAnimation.swift in Sources */,
 				6096EAC4238EA43B00C9B1FA /* ViewDashedBorder.swift in Sources */,
+				60136A1B239414ED009C88F1 /* Home.swift in Sources */,
 				6039C1F12393E33C00F14CB9 /* ButtonsCellTableViewCell.swift in Sources */,
 				6018E9EB238E5D3C00223203 /* ResetPasswordViewController3.swift in Sources */,
 				6015E9402392684A00A4BE91 /* ContactUsViewController.swift in Sources */,
