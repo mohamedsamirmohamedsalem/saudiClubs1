@@ -10,6 +10,9 @@ import UIKit
 
 class SplashViewController : UIViewController {
     
+    @IBOutlet var widthConstrain: NSLayoutConstraint!
+    @IBOutlet var hightConstrain: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

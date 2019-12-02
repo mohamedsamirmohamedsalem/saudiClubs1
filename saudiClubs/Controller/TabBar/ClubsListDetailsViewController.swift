@@ -26,11 +26,12 @@ class ClubsListDetailsViewController : UIViewController {
          // TableView.estimatedRowHeight = 100
           TableView.rowHeight = UITableView.automaticDimension
           TableView.backgroundColor = UIColor.clear
-          
+         
+      
         TableView.RegisterNib(Cell: ClubsListMainTableViewCell.self)
         TableView.RegisterNib(Cell: SliderTableViewCell.self)
         TableView.RegisterNib(Cell: RateClubTableViewCell.self)
-         TableView.RegisterNib(Cell: ButtonsCellTableViewCell.self)
+        TableView.RegisterNib(Cell: ButtonsCellTableViewCell.self)
        // TableView.RegisterNib(Cell: BottomMainTableViewCell.self)
 //TableView.RegisterNib(Cell: FirstBottomCell.self)
           TableView.reloadData()
@@ -52,7 +53,7 @@ class ClubsListDetailsViewController : UIViewController {
   extension ClubsListDetailsViewController : UITableViewDelegate , UITableViewDataSource {
       
       func numberOfSections(in tableView: UITableView) -> Int {
-          return 4
+          return 5
       }
      // set view of header (before table view first cell) to be clear
      func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -68,11 +69,13 @@ class ClubsListDetailsViewController : UIViewController {
       func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
           if indexPath.section == 0 {
                 return 50
-          }else if indexPath.section == 1{
-             return 270
+          }else if indexPath.section == 1 {
+                return 50
           }else if indexPath.section == 2{
-            return 50
+             return 270
           }else if indexPath.section == 3{
+            return 50
+          }else if indexPath.section == 4{
              return 200
           }else{
             return 50
@@ -82,7 +85,7 @@ class ClubsListDetailsViewController : UIViewController {
     
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           
-          if indexPath.section == 0 {
+         if indexPath.section == 0 {
               let cell = tableView.dequeue(IndexPath: indexPath) as ClubsListMainTableViewCell
               cell.selectionStyle = .none
               cell.reloadData()

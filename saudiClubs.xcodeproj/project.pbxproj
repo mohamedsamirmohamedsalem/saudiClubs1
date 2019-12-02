@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600382DC2395354E00DC6604 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600382DB2395354E00DC6604 /* TableViewController.swift */; };
+		600382E02395438600DC6604 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */; };
+		600382E12395438600DC6604 /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */; };
 		60111D192394657800AAB513 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D182394657800AAB513 /* BaseTableViewCell.swift */; };
 		60111D1D239472A500AAB513 /* FirstBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D1B239472A400AAB513 /* FirstBottomCell.swift */; };
 		60111D1E239472A500AAB513 /* FirstBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60111D1C239472A500AAB513 /* FirstBottomCell.xib */; };
@@ -84,6 +87,9 @@
 		0D04E5563854AFEB7DC1F44E /* Pods-saudiClubs1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saudiClubs1.debug.xcconfig"; path = "Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1.debug.xcconfig"; sourceTree = "<group>"; };
 		39C78908CDD2298381973517 /* Pods-saudiClubs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saudiClubs.debug.xcconfig"; path = "Target Support Files/Pods-saudiClubs/Pods-saudiClubs.debug.xcconfig"; sourceTree = "<group>"; };
 		5BF87B1CADA54B7C4054A730 /* Pods-saudiClubs1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saudiClubs1.release.xcconfig"; path = "Target Support Files/Pods-saudiClubs1/Pods-saudiClubs1.release.xcconfig"; sourceTree = "<group>"; };
+		600382DB2395354E00DC6604 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
+		600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		60111D182394657800AAB513 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		60111D1B239472A400AAB513 /* FirstBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstBottomCell.swift; sourceTree = "<group>"; };
 		60111D1C239472A500AAB513 /* FirstBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstBottomCell.xib; sourceTree = "<group>"; };
@@ -172,6 +178,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		600382E22395438D00DC6604 /* AnnouncementTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */,
+				600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */,
+			);
+			path = AnnouncementTableViewCell;
+			sourceTree = "<group>";
+		};
 		60111D172394657800AAB513 /* BaseTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +353,7 @@
 				60A8C5132391DDD500ED056B /* Extention */,
 				60318E67238D180700F2C3AB /* Model */,
 				60318E66238D180200F2C3AB /* View */,
+				600382DB2395354E00DC6604 /* TableViewController.swift */,
 				60318E65238D17FF00F2C3AB /* Controller */,
 			);
 			path = saudiClubs;
@@ -367,6 +383,7 @@
 				60111D172394657800AAB513 /* BaseTableViewCell */,
 				6039C1E92393E26300F14CB9 /* BottomButtonsWithView */,
 				601122E72395106000A856D2 /* NewsTableViewCell */,
+				600382E22395438D00DC6604 /* AnnouncementTableViewCell */,
 				601BA8B0238FC955008F6A96 /* Cells */,
 			);
 			path = View;
@@ -589,6 +606,7 @@
 			files = (
 				6015E93E2392622800A4BE91 /* CairoLight.ttf in Resources */,
 				6039C1F22393E33C00F14CB9 /* ButtonsCellTableViewCell.xib in Resources */,
+				600382E12395438600DC6604 /* AnnouncementTableViewCell.xib in Resources */,
 				601F5CE423915CE400DF1BE6 /* CairoSemiBold.ttf in Resources */,
 				6015226B2392AB3D0022EA8F /* ClubsListMainTableViewCell.xib in Resources */,
 				6015E93B2392622800A4BE91 /* CairoRegular.ttf in Resources */,
@@ -662,6 +680,7 @@
 			files = (
 				601522662392A6450022EA8F /* ClubsListViewController.swift in Sources */,
 				6039C1D92393C91600F14CB9 /* SliderTableViewCell.swift in Sources */,
+				600382E02395438600DC6604 /* AnnouncementTableViewCell.swift in Sources */,
 				601122EA2395107900A856D2 /* NewsTableViewCell.swift in Sources */,
 				601BA8B5238FD3AE008F6A96 /* Constants.swift in Sources */,
 				60318E7F238D1EA800F2C3AB /* TextFiledAnimation.swift in Sources */,
@@ -683,6 +702,7 @@
 				60318E6A238D19C900F2C3AB /* LoginViewController.swift in Sources */,
 				6039C1C62393AC8600F14CB9 /* ClubsListDetailsViewController.swift in Sources */,
 				6039C1EC2393E2A100F14CB9 /* ButtonsCollectionViewCell.swift in Sources */,
+				600382DC2395354E00DC6604 /* TableViewController.swift in Sources */,
 				601BA8B7238FDB3F008F6A96 /* ProfileViewController.swift in Sources */,
 				6017B594238D7528007DC459 /* ResetPasswordViewController2.swift in Sources */,
 				60A8C5192391DDD500ED056B /* UITableView+Generics.swift in Sources */,

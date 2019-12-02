@@ -24,6 +24,13 @@ class NewsViewController: UIViewController {
      }
 
      extension NewsViewController : UITableViewDelegate , UITableViewDataSource {
+        
+        // set view of header (before table view first cell) to be clear
+            func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+                let v: UIView = UIView.init()
+                v.backgroundColor = UIColor.clear
+                return v
+            }
          
          func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
              return 3
