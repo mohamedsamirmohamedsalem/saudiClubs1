@@ -31,6 +31,8 @@ class ClubsListDetailsViewController : UIViewController {
         TableView.RegisterNib(Cell: SliderTableViewCell.self)
         TableView.RegisterNib(Cell: RateClubTableViewCell.self)
          TableView.RegisterNib(Cell: ButtonsCellTableViewCell.self)
+       // TableView.RegisterNib(Cell: BottomMainTableViewCell.self)
+//TableView.RegisterNib(Cell: FirstBottomCell.self)
           TableView.reloadData()
       }
     
@@ -70,9 +72,12 @@ class ClubsListDetailsViewController : UIViewController {
              return 270
           }else if indexPath.section == 2{
             return 50
-          }else{
+          }else if indexPath.section == 3{
              return 200
-          }
+          }else{
+            return 50
+            
+        }
       }
     
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -88,14 +93,13 @@ class ClubsListDetailsViewController : UIViewController {
                       cell.reloadData()
                       return cell
           }else if indexPath.section == 2{
-            let cell = tableView.dequeue(IndexPath: indexPath) as RateClubTableViewCell
+           let cell = tableView.dequeue(IndexPath: indexPath) as RateClubTableViewCell
             cell.selectionStyle = .none
-          
             return cell
-          }else {
+        }else{
             let cell = tableView.dequeue(IndexPath: indexPath) as ButtonsCellTableViewCell
-              cell.selectionStyle = .none
-              return cell
+                       cell.selectionStyle = .none
+                       return cell
         }
       }
   }

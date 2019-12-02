@@ -9,18 +9,11 @@
 import UIKit
 
 class ButtonsCellTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet var firstView: UIView!
+    @IBOutlet var secondView: UIView!
+    
     @IBOutlet var MainCollectionViewCell: UICollectionView!
-    
-    var items : [CircleModel]?{
-        didSet {
-            MainCollectionViewCell.reloadData()
-        }
-    }
-    var didSelectItem: ( (CircleModel) -> () )?
-    
-    
-    
     @IBOutlet var ShowdAndHidedView: UIView!
     
     override func awakeFromNib() {
@@ -37,8 +30,11 @@ class ButtonsCellTableViewCell: UITableViewCell {
 
 extension ButtonsCellTableViewCell : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -48,22 +44,30 @@ extension ButtonsCellTableViewCell : UICollectionViewDelegate , UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width: CGFloat = SCREEN_WIDTH / 3.7
-        let height: CGFloat = 50
+        let width: CGFloat = SCREEN_WIDTH / 3.8
+        let height: CGFloat = 60
         return CGSize(width: width, height: height)
     }
     
 func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
    let cell = collectionView.cellForItem(at: indexPath)
     if indexPath.section == 0 {
-        ShowdAndHidedView.isHidden = true
+        print("999999====================")
+        firstView.isHidden = true
+        secondView.isHidden = false
         
     }else if indexPath.section == 1{
-        print("9====================")
-         ShowdAndHidedView.isHidden = false
-    }else {
-        ShowdAndHidedView.isHidden = false
+         firstView.isHidden = false
+               secondView.isHidden = true
+         
+    }else if indexPath.section == 2 {
+        firstView.isHidden = true
+        secondView.isHidden = false
+    }else{
+        firstView.isHidden = false
+        secondView.isHidden = true
     }
+
   }
 }
 //extension UICollectionView {
