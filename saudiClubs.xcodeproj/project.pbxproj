@@ -10,6 +10,7 @@
 		600382DC2395354E00DC6604 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600382DB2395354E00DC6604 /* TableViewController.swift */; };
 		600382E02395438600DC6604 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */; };
 		600382E12395438600DC6604 /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */; };
+		601023AC2395734600F7EDDD /* OnBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601023AB2395734500F7EDDD /* OnBoardCell.swift */; };
 		60111D192394657800AAB513 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D182394657800AAB513 /* BaseTableViewCell.swift */; };
 		60111D1D239472A500AAB513 /* FirstBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D1B239472A400AAB513 /* FirstBottomCell.swift */; };
 		60111D1E239472A500AAB513 /* FirstBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60111D1C239472A500AAB513 /* FirstBottomCell.xib */; };
@@ -48,6 +49,12 @@
 		601BA8B7238FDB3F008F6A96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BA8B6238FDB3F008F6A96 /* ProfileViewController.swift */; };
 		601BA8BE238FEF7C008F6A96 /* MyFollowlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BA8BD238FEF7C008F6A96 /* MyFollowlistViewController.swift */; };
 		601F5CE423915CE400DF1BE6 /* CairoSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601F5CE323915CE400DF1BE6 /* CairoSemiBold.ttf */; };
+		602FA08223955A56001C00CF /* FirstCellInDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602FA08123955A56001C00CF /* FirstCellInDetails.swift */; };
+		602FA08423955A8D001C00CF /* FirstCellInDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602FA08323955A8D001C00CF /* FirstCellInDetails.xib */; };
+		602FA0862395604E001C00CF /* SecondCellInDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602FA0852395604E001C00CF /* SecondCellInDetails.swift */; };
+		602FA088239560C4001C00CF /* SecondCellInDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602FA087239560C4001C00CF /* SecondCellInDetails.xib */; };
+		602FA08A239564C6001C00CF /* ThirdCellInDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602FA089239564C5001C00CF /* ThirdCellInDetails.swift */; };
+		602FA08C239564D9001C00CF /* ThirdCellInDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602FA08B239564D9001C00CF /* ThirdCellInDetails.xib */; };
 		60318E52238D17ED00F2C3AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E51238D17ED00F2C3AB /* AppDelegate.swift */; };
 		60318E54238D17ED00F2C3AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E53238D17ED00F2C3AB /* SceneDelegate.swift */; };
 		60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60318E55238D17ED00F2C3AB /* SplashViewController.swift */; };
@@ -90,6 +97,7 @@
 		600382DB2395354E00DC6604 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
+		601023AB2395734500F7EDDD /* OnBoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardCell.swift; sourceTree = "<group>"; };
 		60111D182394657800AAB513 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		60111D1B239472A400AAB513 /* FirstBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstBottomCell.swift; sourceTree = "<group>"; };
 		60111D1C239472A500AAB513 /* FirstBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstBottomCell.xib; sourceTree = "<group>"; };
@@ -128,6 +136,12 @@
 		601BA8B6238FDB3F008F6A96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		601BA8BD238FEF7C008F6A96 /* MyFollowlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFollowlistViewController.swift; sourceTree = "<group>"; };
 		601F5CE323915CE400DF1BE6 /* CairoSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CairoSemiBold.ttf; sourceTree = "<group>"; };
+		602FA08123955A56001C00CF /* FirstCellInDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCellInDetails.swift; sourceTree = "<group>"; };
+		602FA08323955A8D001C00CF /* FirstCellInDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCellInDetails.xib; sourceTree = "<group>"; };
+		602FA0852395604E001C00CF /* SecondCellInDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCellInDetails.swift; sourceTree = "<group>"; };
+		602FA087239560C4001C00CF /* SecondCellInDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCellInDetails.xib; sourceTree = "<group>"; };
+		602FA089239564C5001C00CF /* ThirdCellInDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCellInDetails.swift; sourceTree = "<group>"; };
+		602FA08B239564D9001C00CF /* ThirdCellInDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCellInDetails.xib; sourceTree = "<group>"; };
 		60318E4E238D17ED00F2C3AB /* saudiClubs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saudiClubs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60318E51238D17ED00F2C3AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60318E53238D17ED00F2C3AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -287,6 +301,13 @@
 		601BA8B0238FC955008F6A96 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				601023AB2395734500F7EDDD /* OnBoardCell.swift */,
+				602FA08123955A56001C00CF /* FirstCellInDetails.swift */,
+				602FA08323955A8D001C00CF /* FirstCellInDetails.xib */,
+				602FA0852395604E001C00CF /* SecondCellInDetails.swift */,
+				602FA087239560C4001C00CF /* SecondCellInDetails.xib */,
+				602FA089239564C5001C00CF /* ThirdCellInDetails.swift */,
+				602FA08B239564D9001C00CF /* ThirdCellInDetails.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -604,12 +625,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				602FA08C239564D9001C00CF /* ThirdCellInDetails.xib in Resources */,
 				6015E93E2392622800A4BE91 /* CairoLight.ttf in Resources */,
 				6039C1F22393E33C00F14CB9 /* ButtonsCellTableViewCell.xib in Resources */,
 				600382E12395438600DC6604 /* AnnouncementTableViewCell.xib in Resources */,
 				601F5CE423915CE400DF1BE6 /* CairoSemiBold.ttf in Resources */,
 				6015226B2392AB3D0022EA8F /* ClubsListMainTableViewCell.xib in Resources */,
 				6015E93B2392622800A4BE91 /* CairoRegular.ttf in Resources */,
+				602FA08423955A8D001C00CF /* FirstCellInDetails.xib in Resources */,
 				6039C1E12393CA2200F14CB9 /* SingleCollectionViewCell.xib in Resources */,
 				601435422391AFAD0045348A /* CairoBold.ttf in Resources */,
 				6015E93C2392622800A4BE91 /* CairoBlack.ttf in Resources */,
@@ -620,6 +643,7 @@
 				6015227A2392B2F40022EA8F /* ClubsListTableViewCell.xib in Resources */,
 				60318E5E238D17EF00F2C3AB /* LaunchScreen.storyboard in Resources */,
 				60318E5B238D17EF00F2C3AB /* Assets.xcassets in Resources */,
+				602FA088239560C4001C00CF /* SecondCellInDetails.xib in Resources */,
 				6015E933239254A100A4BE91 /* MyFollwlisrTableViewCell.xib in Resources */,
 				6039C1DA2393C91600F14CB9 /* SliderTableViewCell.xib in Resources */,
 				6039C1ED2393E2A100F14CB9 /* ButtonsCollectionViewCell.xib in Resources */,
@@ -705,6 +729,7 @@
 				600382DC2395354E00DC6604 /* TableViewController.swift in Sources */,
 				601BA8B7238FDB3F008F6A96 /* ProfileViewController.swift in Sources */,
 				6017B594238D7528007DC459 /* ResetPasswordViewController2.swift in Sources */,
+				601023AC2395734600F7EDDD /* OnBoardCell.swift in Sources */,
 				60A8C5192391DDD500ED056B /* UITableView+Generics.swift in Sources */,
 				60318E7B238D1EA800F2C3AB /* TextFieldCorners.swift in Sources */,
 				60111D192394657800AAB513 /* BaseTableViewCell.swift in Sources */,
@@ -713,11 +738,13 @@
 				6015227C2392C0930022EA8F /* Inspectables.swift in Sources */,
 				60318E77238D1EA800F2C3AB /* ButtonCorners.swift in Sources */,
 				60318E79238D1EA800F2C3AB /* LabelCorners.swift in Sources */,
+				602FA08A239564C6001C00CF /* ThirdCellInDetails.swift in Sources */,
 				601BA8AC238FC1D6008F6A96 /* TabBarController.swift in Sources */,
 				6039C1CA2393ADEA00F14CB9 /* ClubsdetailsCollectionViewCell.swift in Sources */,
 				60136A1D23942060009C88F1 /* NewsViewController.swift in Sources */,
 				601342A2238D44B900B8560C /* SignUpViewController.swift in Sources */,
 				601122ED2395175F00A856D2 /* newsDetailsVC.swift in Sources */,
+				602FA0862395604E001C00CF /* SecondCellInDetails.swift in Sources */,
 				60318E78238D1EA800F2C3AB /* ImageCorners.swift in Sources */,
 				60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */,
 				601123802394475100D739B0 /* BottomMainTableViewCell.swift in Sources */,
@@ -726,6 +753,7 @@
 				6015E9362392608300A4BE91 /* AboutAppViewController.swift in Sources */,
 				6019F198238FAC2C005BE346 /* TextFieldUnderlined.swift in Sources */,
 				601BA8AF238FC729008F6A96 /* SideMenuViewController.swift in Sources */,
+				602FA08223955A56001C00CF /* FirstCellInDetails.swift in Sources */,
 				6012CC2A238D502200DEB61E /* ResetPasswordViewController1.swift in Sources */,
 				60318E52238D17ED00F2C3AB /* AppDelegate.swift in Sources */,
 				60318E54238D17ED00F2C3AB /* SceneDelegate.swift in Sources */,
