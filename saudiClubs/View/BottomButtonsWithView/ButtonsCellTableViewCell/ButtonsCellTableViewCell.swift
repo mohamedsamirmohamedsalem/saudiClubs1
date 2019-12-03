@@ -22,7 +22,6 @@ class ButtonsCellTableViewCell: UITableViewCell {
         MainCollectionViewCell.delegate = self
         MainCollectionViewCell.dataSource = self
         MainCollectionViewCell.RegisterNib(Cell: ButtonsCollectionViewCell.self)
-    //    MainCollectionViewCell.scrollToLast()
     }
     
     

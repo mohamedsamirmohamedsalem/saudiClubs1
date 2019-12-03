@@ -11,11 +11,14 @@ import UIKit
 class SecondCellInDetails: UIView {
 
         @IBOutlet var ContainerView: UIView!
-
+    @IBOutlet var CollectionView: UICollectionView!
+    
        required init?(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
             print("It is working")
             commonInit()
+    
+        
         }
         
         func commonInit(){
@@ -25,4 +28,6 @@ class SecondCellInDetails: UIView {
                 ContainerView = nibView
             }
         }
+    
+    
     }

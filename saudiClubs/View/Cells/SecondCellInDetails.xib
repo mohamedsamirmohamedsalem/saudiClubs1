@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondCellInDetails" customModule="saudiClubs" customModuleProvider="target">
             <connections>
-                <outlet property="CollectionView" destination="Cqr-bc-jva" id="rKl-sF-Pit"/>
+                <outlet property="CollectionView" destination="Cqr-bc-jva" id="fWL-7d-n5Q"/>
                 <outlet property="ContainerView" destination="Ehk-lf-qRn" id="3id-aW-DxJ"/>
             </connections>
         </placeholder>
@@ -50,7 +50,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="389.85507246376812" y="632.8125"/>
+            <point key="canvasLocation" x="186" y="621"/>
         </view>
     </objects>
 </document>

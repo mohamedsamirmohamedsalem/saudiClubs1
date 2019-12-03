@@ -16,17 +16,18 @@ class ScrollClubListDetailsViewController: UIViewController {
             var currentIndex = 0
             var timer: Timer?
             
-            // Outlets
+    
+            //IBOutlets
+            @IBOutlet var firstContainerView: UIView!
             @IBOutlet weak var Collection: UICollectionView!
             
             @IBOutlet weak var pageControl: UIPageControl!
-            
+            @IBOutlet var ButtonsCollectionView: UICollectionView!
+    
             override func viewDidLoad() {
                 super.viewDidLoad()
+            //    ButtonsCollectionView.RegisterNib(Cell:ButtonsCollectionViewCell.self)
                 pageControl.numberOfPages = 5
-                
-                //adjustCollectionViewContentOffset()
-                
                 startTimer()
             }
             
@@ -56,11 +57,17 @@ class ScrollClubListDetailsViewController: UIViewController {
             
             
             func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newcell", for: indexPath) as! newcell
+                if collectionView.tag == 0 {
+                    print("000000000000")
+                    let cell = collectionView.dequeue(IndexPath: indexPath) as ButtonsCollectionViewCell
+                    return cell
+                }else {
+                    print("1111111111")
+                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newcell", for: indexPath) as! newcell
+                    cell.image_ = images[indexPath.row]
+                    return cell
+                }
                 
-                cell.image_ = images[indexPath.row]
-                
-                return cell
                 
             }
             
@@ -81,7 +88,7 @@ class ScrollClubListDetailsViewController: UIViewController {
                     
                     
                     pageControl.currentPage = currentIndex
-                    print(scrollView.contentOffset.x / Collection.frame.width)
+                   // print(scrollView.contentOffset.x / Collection.frame.width)
                     timer?.invalidate()
                     
                     startTimer()
@@ -89,3 +96,4 @@ class ScrollClubListDetailsViewController: UIViewController {
                 }
             }
         }
+

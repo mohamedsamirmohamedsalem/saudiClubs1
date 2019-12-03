@@ -18,7 +18,5 @@ class ButtonsCollectionViewCell: UICollectionViewCell {
         CollectionLabel.clipsToBounds = true
     }
 
-    @IBAction func buttonAction(_ sender: UIButton) {
-        print("=============")
-    }
+  
 }

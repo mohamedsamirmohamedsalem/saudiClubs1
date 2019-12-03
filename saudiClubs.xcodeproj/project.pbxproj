@@ -12,6 +12,7 @@
 		600382E12395438600DC6604 /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */; };
 		601023AC2395734600F7EDDD /* OnBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601023AB2395734500F7EDDD /* OnBoardCell.swift */; };
 		6010733F23963F260040419C /* newcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6010733E23963F260040419C /* newcell.swift */; };
+		6010734323964D0F0040419C /* secondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6010734223964D0F0040419C /* secondCell.swift */; };
 		60111D192394657800AAB513 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D182394657800AAB513 /* BaseTableViewCell.swift */; };
 		60111D1D239472A500AAB513 /* FirstBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D1B239472A400AAB513 /* FirstBottomCell.swift */; };
 		60111D1E239472A500AAB513 /* FirstBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60111D1C239472A500AAB513 /* FirstBottomCell.xib */; };
@@ -101,6 +102,7 @@
 		600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		601023AB2395734500F7EDDD /* OnBoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardCell.swift; sourceTree = "<group>"; };
 		6010733E23963F260040419C /* newcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newcell.swift; sourceTree = "<group>"; };
+		6010734223964D0F0040419C /* secondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondCell.swift; sourceTree = "<group>"; };
 		60111D182394657800AAB513 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		60111D1B239472A400AAB513 /* FirstBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstBottomCell.swift; sourceTree = "<group>"; };
 		60111D1C239472A500AAB513 /* FirstBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstBottomCell.xib; sourceTree = "<group>"; };
@@ -234,7 +236,6 @@
 		6011237D239446F900D739B0 /* BottomMainTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				6039C1EB2393E2A100F14CB9 /* ButtonsCollectionViewCell.xib */,
 				6011237E2394475100D739B0 /* BottomMainTableViewCell.swift */,
 				6011237F2394475100D739B0 /* BottomMainTableViewCell.xib */,
 			);
@@ -308,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				6010733E23963F260040419C /* newcell.swift */,
+				6010734223964D0F0040419C /* secondCell.swift */,
 				601023AB2395734500F7EDDD /* OnBoardCell.swift */,
 				602FA08123955A56001C00CF /* FirstCellInDetails.swift */,
 				602FA08323955A8D001C00CF /* FirstCellInDetails.xib */,
@@ -530,6 +532,7 @@
 			isa = PBXGroup;
 			children = (
 				6039C1EA2393E2A100F14CB9 /* ButtonsCollectionViewCell.swift */,
+				6039C1EB2393E2A100F14CB9 /* ButtonsCollectionViewCell.xib */,
 			);
 			path = ButtonsCollectionViewCell;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 				60318E56238D17ED00F2C3AB /* SplashViewController.swift in Sources */,
 				601123802394475100D739B0 /* BottomMainTableViewCell.swift in Sources */,
 				60318E7E238D1EA800F2C3AB /* TextFieldPadding.swift in Sources */,
+				6010734323964D0F0040419C /* secondCell.swift in Sources */,
 				6039C1E72393DD8000F14CB9 /* RateClubTableViewCell.swift in Sources */,
 				6015E9362392608300A4BE91 /* AboutAppViewController.swift in Sources */,
 				6019F198238FAC2C005BE346 /* TextFieldUnderlined.swift in Sources */,
