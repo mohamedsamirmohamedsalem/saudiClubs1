@@ -11,6 +11,7 @@
 		600382E02395438600DC6604 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */; };
 		600382E12395438600DC6604 /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */; };
 		601023AC2395734600F7EDDD /* OnBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601023AB2395734500F7EDDD /* OnBoardCell.swift */; };
+		6010733F23963F260040419C /* newcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6010733E23963F260040419C /* newcell.swift */; };
 		60111D192394657800AAB513 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D182394657800AAB513 /* BaseTableViewCell.swift */; };
 		60111D1D239472A500AAB513 /* FirstBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60111D1B239472A400AAB513 /* FirstBottomCell.swift */; };
 		60111D1E239472A500AAB513 /* FirstBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60111D1C239472A500AAB513 /* FirstBottomCell.xib */; };
@@ -87,6 +88,7 @@
 		6096EAC4238EA43B00C9B1FA /* ViewDashedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096EAC3238EA43B00C9B1FA /* ViewDashedBorder.swift */; };
 		60A8C5182391DDD500ED056B /* UICollectionView+Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A8C5152391DDD500ED056B /* UICollectionView+Generics.swift */; };
 		60A8C5192391DDD500ED056B /* UITableView+Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A8C5162391DDD500ED056B /* UITableView+Generics.swift */; };
+		60EA6D852395CFE400FE1765 /* ScrollClubListDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA6D842395CFE400FE1765 /* ScrollClubListDetailsViewController.swift */; };
 		613AA7853F7157F19D0B9C36 /* Pods_saudiClubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31F4EEC4B2CAEE8D3A0BF49 /* Pods_saudiClubs.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,7 @@
 		600382DE2395438600DC6604 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		600382DF2395438600DC6604 /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		601023AB2395734500F7EDDD /* OnBoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardCell.swift; sourceTree = "<group>"; };
+		6010733E23963F260040419C /* newcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newcell.swift; sourceTree = "<group>"; };
 		60111D182394657800AAB513 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		60111D1B239472A400AAB513 /* FirstBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstBottomCell.swift; sourceTree = "<group>"; };
 		60111D1C239472A500AAB513 /* FirstBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstBottomCell.xib; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 		6096EAC3238EA43B00C9B1FA /* ViewDashedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDashedBorder.swift; sourceTree = "<group>"; };
 		60A8C5152391DDD500ED056B /* UICollectionView+Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Generics.swift"; sourceTree = "<group>"; };
 		60A8C5162391DDD500ED056B /* UITableView+Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Generics.swift"; sourceTree = "<group>"; };
+		60EA6D842395CFE400FE1765 /* ScrollClubListDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollClubListDetailsViewController.swift; sourceTree = "<group>"; };
 		A31F4EEC4B2CAEE8D3A0BF49 /* Pods_saudiClubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_saudiClubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E6B5E8671D944B4479EE35 /* Pods-saudiClubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saudiClubs.release.xcconfig"; path = "Target Support Files/Pods-saudiClubs/Pods-saudiClubs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +234,7 @@
 		6011237D239446F900D739B0 /* BottomMainTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				6039C1EB2393E2A100F14CB9 /* ButtonsCollectionViewCell.xib */,
 				6011237E2394475100D739B0 /* BottomMainTableViewCell.swift */,
 				6011237F2394475100D739B0 /* BottomMainTableViewCell.xib */,
 			);
@@ -294,6 +299,7 @@
 				601BA8B6238FDB3F008F6A96 /* ProfileViewController.swift */,
 				601522652392A6450022EA8F /* ClubsListViewController.swift */,
 				6039C1C52393AC8600F14CB9 /* ClubsListDetailsViewController.swift */,
+				60EA6D842395CFE400FE1765 /* ScrollClubListDetailsViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 		601BA8B0238FC955008F6A96 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6010733E23963F260040419C /* newcell.swift */,
 				601023AB2395734500F7EDDD /* OnBoardCell.swift */,
 				602FA08123955A56001C00CF /* FirstCellInDetails.swift */,
 				602FA08323955A8D001C00CF /* FirstCellInDetails.xib */,
@@ -523,7 +530,6 @@
 			isa = PBXGroup;
 			children = (
 				6039C1EA2393E2A100F14CB9 /* ButtonsCollectionViewCell.swift */,
-				6039C1EB2393E2A100F14CB9 /* ButtonsCollectionViewCell.xib */,
 			);
 			path = ButtonsCollectionViewCell;
 			sourceTree = "<group>";
@@ -704,6 +710,7 @@
 			files = (
 				601522662392A6450022EA8F /* ClubsListViewController.swift in Sources */,
 				6039C1D92393C91600F14CB9 /* SliderTableViewCell.swift in Sources */,
+				6010733F23963F260040419C /* newcell.swift in Sources */,
 				600382E02395438600DC6604 /* AnnouncementTableViewCell.swift in Sources */,
 				601122EA2395107900A856D2 /* NewsTableViewCell.swift in Sources */,
 				601BA8B5238FD3AE008F6A96 /* Constants.swift in Sources */,
@@ -728,6 +735,7 @@
 				6039C1EC2393E2A100F14CB9 /* ButtonsCollectionViewCell.swift in Sources */,
 				600382DC2395354E00DC6604 /* TableViewController.swift in Sources */,
 				601BA8B7238FDB3F008F6A96 /* ProfileViewController.swift in Sources */,
+				60EA6D852395CFE400FE1765 /* ScrollClubListDetailsViewController.swift in Sources */,
 				6017B594238D7528007DC459 /* ResetPasswordViewController2.swift in Sources */,
 				601023AC2395734600F7EDDD /* OnBoardCell.swift in Sources */,
 				60A8C5192391DDD500ED056B /* UITableView+Generics.swift in Sources */,

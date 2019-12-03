@@ -32,8 +32,8 @@ class ClubsListDetailsViewController : UIViewController {
         TableView.RegisterNib(Cell: SliderTableViewCell.self)
         TableView.RegisterNib(Cell: RateClubTableViewCell.self)
         TableView.RegisterNib(Cell: ButtonsCellTableViewCell.self)
-       // TableView.RegisterNib(Cell: BottomMainTableViewCell.self)
-//TableView.RegisterNib(Cell: FirstBottomCell.self)
+        
+
           TableView.reloadData()
       }
     
@@ -53,7 +53,7 @@ class ClubsListDetailsViewController : UIViewController {
   extension ClubsListDetailsViewController : UITableViewDelegate , UITableViewDataSource {
       
       func numberOfSections(in tableView: UITableView) -> Int {
-          return 5
+          return 4
       }
      // set view of header (before table view first cell) to be clear
      func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -70,9 +70,9 @@ class ClubsListDetailsViewController : UIViewController {
           if indexPath.section == 0 {
                 return 50
           }else if indexPath.section == 1 {
-                return 50
+                return 200
           }else if indexPath.section == 2{
-             return 270
+             return 60
           }else if indexPath.section == 3{
             return 50
           }else if indexPath.section == 4{

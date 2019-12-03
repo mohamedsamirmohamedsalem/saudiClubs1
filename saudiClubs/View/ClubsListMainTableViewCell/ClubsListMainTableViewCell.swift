@@ -47,6 +47,7 @@ extension ClubsListMainTableViewCell : UICollectionViewDelegate , UICollectionVi
         return CGSize(width: width, height: height)
     }
     
+    
 }
 
 

@@ -25,14 +25,31 @@ class ClubsListViewController: UIViewController {
         //      SearchBar.backgroundImage = UIImage()
         TableView.RegisterNib(Cell: AnnouncementTableViewCell.self)
         TableView.RegisterNib(Cell: ClubsListTableViewCell.self)
+        TableView.rowHeight = UITableView.automaticDimension
+        //  TableView.backgroundColor = UIColor.clear
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.TableView.reloadData()
+        self.TableView.beginUpdates()
+        self.TableView.endUpdates()
+        //remove table views hight
+         
+        TableView.sectionHeaderHeight = 15
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     
     
 }
 
 extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource {
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
@@ -45,24 +62,38 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let v: UIView = UIView.init()
         v.backgroundColor = UIColor.clear
+        
         return v
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeue(IndexPath: indexPath) as AnnouncementTableViewCell
+            //
+            //this for change backgroundColor of cell when select it
+            let backgroundView = UIView()
+            backgroundView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            cell.selectedBackgroundView = backgroundView
+            //
             cell.selectionStyle = .none
             return cell
         }else {
             let cell = tableView.dequeue(IndexPath: indexPath) as ClubsListTableViewCell
+            //
+            //this for change backgroundColor of cell when select it
+            let backgroundView = UIView()
+            backgroundView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            cell.selectedBackgroundView = backgroundView
+            //
             return cell
         }
         
         
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ClubsListDetailsViewController") as! ClubsListDetailsViewController
         present(storyBoard, animated: true, completion: nil)
         
@@ -86,6 +117,7 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
             }
         }
     }
+    
 }
 extension ClubsListViewController : UISearchBarDelegate {
     

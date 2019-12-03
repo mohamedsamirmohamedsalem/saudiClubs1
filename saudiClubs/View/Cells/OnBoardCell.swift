@@ -10,8 +10,13 @@ import UIKit
 
 class OnBoardCell: UICollectionViewCell {
     
-    @IBOutlet weak var onBoardImage: UIImageView!
-
+    @IBOutlet weak var image: UIImageView!
     
-   
+    var image_: UIImage! {
+        didSet {
+            image.image = image_
+        }
+    }
+    
+
 }
