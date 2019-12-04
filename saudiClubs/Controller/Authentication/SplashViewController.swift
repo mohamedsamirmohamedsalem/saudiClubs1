@@ -26,26 +26,27 @@ class SplashViewController : UIViewController {
     
     func makeImageAnimate(){
         self.photoView.alpha = 0
-        UIView.animate(withDuration: 1.8, delay: 0, options: UIView.AnimationOptions.showHideTransitionViews, animations: { () -> Void in
-              self.photoView.alpha = 1
-             }, completion: { (Bool) -> Void in})
+        UIView.animate(withDuration: 2, delay: 0, options: UIView.AnimationOptions.showHideTransitionViews, animations: { () -> Void in
+            self.photoView.alpha = 1
+        }, completion: { (Bool) -> Void in})
         
     }
     func goToLoginViewController(){
         
         if let ApiToken  = UserDefaults.standard.string(forKey: "ApiToken"){
-           if  UserDefaults.standard.object(forKey: "ApiToken") != nil {
+            if  UserDefaults.standard.object(forKey: "ApiToken") != nil {
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
-                                self.present(storyBoard, animated: true, completion: nil)
+                self.present(storyBoard, animated: true, completion: nil)
+                
             }else{
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-                     self.present(storyBoard, animated: true, completion: nil)
+                self.present(storyBoard, animated: true, completion: nil)
             }
         }else{
             let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-             self.present(storyBoard, animated: true, completion: nil)
+            self.present(storyBoard, animated: true, completion: nil)
         }
-       
+        
     }
 }
 
