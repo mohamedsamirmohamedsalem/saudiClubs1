@@ -9,14 +9,17 @@
 import UIKit
 
 class OnBoardCell: UICollectionViewCell {
+ 
     
-    @IBOutlet weak var image: UIImageView!
-    
-    var image_: UIImage! {
+    @IBOutlet var labelOut: UILabel!{
         didSet {
-            image.image = image_
+            self.cornerRadius = 20 
         }
     }
     
-
+    @IBOutlet var ButOut: UIButton!{
+    didSet {
+        self.frame.size.width = SCREEN_WIDTH
+         }
+     }
 }

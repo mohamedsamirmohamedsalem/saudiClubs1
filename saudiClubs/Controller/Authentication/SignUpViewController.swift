@@ -42,10 +42,27 @@ class SignUpViewController: UIViewController {
                  }
             
             if !(email.isEmpty || phone.isEmpty || name.isEmpty || password.isEmpty || confirmPassword.isEmpty) &&  password == confirmPassword && SignUpViewController.isValidEmail(emailStr: email){
-                print("sign up success")
-                let storyBoard = UIStoryboard(name: "Main", bundle: nil
-                ).instantiateViewController(identifier: "ResetPasswordViewController1") as! ResetPasswordViewController1
-                present(storyBoard, animated: true, completion: nil)
+                /////////////////////////////////////////
+                
+                DispatchQueue.main.async{
+                    print("sign up success")
+                    let url = saudiBaseUrl + "/user/register"
+                    let parameter = ["username":name, "password":password,"password_confirmation":confirmPassword ,"email":email ,"phone":phone]
+                    let header = ["lang":"ar"]
+                    print("1111")
+                    API.post(url, parameter: parameter, headers: nil) { (check, Response:RegisterResponse?) in
+                        if check{
+                            print("2222")
+                            guard let response = Response else {return}
+                            let message = response.message
+                            self.GoingToSecondScreen()
+                        }else{
+                            print("=========>false")
+        
+                        }
+                    }
+                }
+                
                 
             }else{
             if name.isEmpty {
@@ -79,6 +96,11 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func haveAnAccount(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+    }
+    func GoingToSecondScreen(){
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil
+    ).instantiateViewController(identifier: "ResetPasswordViewController1") as! ResetPasswordViewController1
+    present(storyBoard, animated: true, completion: nil)
     }
     
     //MARK :- methods

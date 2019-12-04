@@ -16,13 +16,17 @@ class ClubsListViewController: UIViewController {
     @IBOutlet var NotificationButt: UIButton!
     @IBOutlet var TableView: UITableView!
     @IBOutlet var SearchBar: UISearchBar!
+    @IBOutlet var StackView: UIStackView!
+    @IBOutlet var searchStackBar: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // SearchBar.delegate = self
         TableView.delegate = self
         TableView.dataSource = self
-        //      SearchBar.backgroundImage = UIImage()
+          SearchBar.delegate = self
+        searchStackBar.isHidden = true
+             SearchBar.backgroundImage = UIImage()
         TableView.RegisterNib(Cell: AnnouncementTableViewCell.self)
         TableView.RegisterNib(Cell: ClubsListTableViewCell.self)
         TableView.rowHeight = UITableView.automaticDimension
@@ -45,6 +49,21 @@ class ClubsListViewController: UIViewController {
         super.viewDidAppear(animated)
     }
     
+    @IBAction func ShowAndHideSearchBar(_ sender: UIButton) {
+        if sender.tag == 0 {
+            UIView.animate(withDuration: 3) {
+                self.StackView.isHidden = true
+                self.searchStackBar.isHidden = false
+            }
+        }else {
+            UIView.animate(withDuration: 3) {
+                self.StackView.isHidden = false
+                self.searchStackBar.isHidden = true
+            }
+        }
+        self.view.layoutIfNeeded()
+        self.view.endEditing(true)
+    }
     
 }
 
@@ -120,5 +139,13 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
     
 }
 extension ClubsListViewController : UISearchBarDelegate {
-    
+ 
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.text = ""
+        searchBar.showsCancelButton = false
+        // You could also change the position, frame etc of the searchBar
+        self.StackView.isHidden = false
+                 self.SearchBar.isHidden = true
+        print("sgjdsdsdsdsdsdsdsd")
+    }
 }
