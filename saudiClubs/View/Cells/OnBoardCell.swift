@@ -11,12 +11,7 @@ import UIKit
 class OnBoardCell: UICollectionViewCell {
  
     
-    @IBOutlet var labelOut: UILabel!{
-        didSet {
-            self.cornerRadius = 20 
-        }
-    }
-    
+     let butContent = [" نبذه عن النادي "," رياضات داخل النادي "," أخبار النادي "," المسابقات والانشطه "]
     @IBOutlet var ButOut: UIButton!{
     didSet {
         self.frame.size.width = SCREEN_WIDTH

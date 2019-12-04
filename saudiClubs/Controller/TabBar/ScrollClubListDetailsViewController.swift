@@ -12,6 +12,7 @@ class ScrollClubListDetailsViewController: UIViewController {
     
     
     let images = [#imageLiteral(resourceName: "bank"), #imageLiteral(resourceName: "news_img"), #imageLiteral(resourceName: "user-img"), #imageLiteral(resourceName: "good-rate"), #imageLiteral(resourceName: "club-img")]
+   
     
     var currentIndex = 0
     var timer: Timer?
@@ -27,9 +28,8 @@ class ScrollClubListDetailsViewController: UIViewController {
         super.viewDidLoad()
         pageControl.numberOfPages = 5
         
-        //adjustCollectionViewContentOffset()
-          // BContainerView.addSubview(FirstCellInDetails)
-        
+        //BContainerView.addSubview(FirstCellInDetails)
+        title = "تطبيق الانديه السعوديه"    
         startTimer()
 
     }
@@ -69,6 +69,7 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
         
         if collectionView.tag == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnBoardCell", for: indexPath) as! OnBoardCell
+            cell.ButOut.setTitle(cell.butContent[indexPath.row], for: .normal)
            return cell
         }else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newcell", for: indexPath) as! newcell
