@@ -13,15 +13,24 @@ class SplashViewController : UIViewController {
     @IBOutlet var widthConstrain: NSLayoutConstraint!
     @IBOutlet var hightConstrain: NSLayoutConstraint!
     
+    @IBOutlet var photoView: UIImageView!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+        
+        makeImageAnimate()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.goToLoginViewController()
         }
     }
     
+    func makeImageAnimate(){
+        self.photoView.alpha = 0
+        UIView.animate(withDuration: 1.8, delay: 0, options: UIView.AnimationOptions.showHideTransitionViews, animations: { () -> Void in
+              self.photoView.alpha = 1
+             }, completion: { (Bool) -> Void in})
+        
+    }
     func goToLoginViewController(){
         
         if let ApiToken  = UserDefaults.standard.string(forKey: "ApiToken"){

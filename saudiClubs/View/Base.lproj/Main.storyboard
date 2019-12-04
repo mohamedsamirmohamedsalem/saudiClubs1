@@ -45,6 +45,7 @@
                     <navigationItem key="navigationItem" title="on" id="iQ4-Q6-N8z"/>
                     <connections>
                         <outlet property="hightConstrain" destination="UUA-Ey-uVo" id="ex3-V9-Kyx"/>
+                        <outlet property="photoView" destination="ST2-AT-Bfe" id="kNW-BZ-lC8"/>
                         <outlet property="widthConstrain" destination="GBv-xr-Ebl" id="WEk-ND-qhL"/>
                     </connections>
                 </viewController>
