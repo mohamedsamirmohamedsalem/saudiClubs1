@@ -9,5 +9,11 @@ import Foundation
 
 // MARK: - Welcome
 struct RegisterResponse: Codable{
-        let message: String?
-    }
+    let message: String?
+    let errors: SignUpErrors?
+}
+
+// MARK: - Errors
+struct SignUpErrors:Codable{
+    let email, phone: [String]?
+}

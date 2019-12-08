@@ -113,7 +113,7 @@ extension ClubsListViewController : UITableViewDelegate , UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ClubsListDetailsViewController") as! ClubsListDetailsViewController
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ScrollClubListDetailsViewController") as! ScrollClubListDetailsViewController
         present(storyBoard, animated: true, completion: nil)
         
     }

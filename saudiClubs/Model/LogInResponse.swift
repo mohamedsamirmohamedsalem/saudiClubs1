@@ -9,11 +9,20 @@
 import Foundation
 
 struct LogInResponse : Codable {
-      let data: DataClass?
+    let message:String?
+    let data: DataClass?
+    let errors: Errors?
+    
 }
-    // MARK: - DataClass
+// MARK: - DataClass
 struct DataClass : Codable{
-        let id : Int?
-        let isVerified: Int?
-        let token: String?
-    }
+    let id : Int?
+    let isVerified: Int?
+    let token: String?
+    
+}
+
+// MARK: - Errors
+struct Errors :Codable {
+    let password: [String]?
+}

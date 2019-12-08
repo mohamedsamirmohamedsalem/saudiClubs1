@@ -12,56 +12,52 @@ import Alamofire
 
 class API: NSObject {
     
-    let Errormessage:String = ""
     /////////////////////////////////////////////////////////////////////////////////////////////////
     // post function
-    class func post<T:Codable>(_ url:String,parameter:[String:Any]?,headers:[String:String]?,completion: @escaping (_ check:Bool,_ response:T?)->Void){
+    class func post<T:Codable>(_ url:String,parameter:[String:Any]?,headers:[String:String]?,completion: @escaping (_ check:Bool,_ response:T?,_ statusCode:Int)->Void){
         Alamofire.request(url, method: .post, parameters: parameter, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            guard let httpStatusCode = response.response?.statusCode else {return}
+            if httpStatusCode == 200 {
+            }else if httpStatusCode == 414 {
+                
+            }else {
+                
+            }
             if response.result.isSuccess{
                 guard let data = response.data else {print("Can't get data from the server");return}
                 do {
                     let jsonResponse = try JSONDecoder().decode(T.self, from: data)
-                    completion(true,jsonResponse)
+                    completion(true,jsonResponse,httpStatusCode)
                 }catch{
                     print(error)
-                    completion(false,nil)
+                    completion(false,nil,httpStatusCode)
                 }
             }else {
-                print("check your internet connection")
-                completion(false,nil)
+                print("============>Error\(Error.self)")
+                completion(false,nil,httpStatusCode)
             }
         }
     }
     //////////////////////////////////////////////////////////////////////////////////////////
     //get function
-    class func get<T:Codable>(url:String,parameter:[String:Any]?,headers:[String:String]?,completion:@escaping(_ check:Bool ,_ response:T?)->Void){
+    class func get<T:Codable>(url:String,parameter:[String:Any]?,headers:[String:String]?,completion:@escaping(_ check:Bool ,_ response:T?,_ statusCode:Int)->Void){
         Alamofire.request(url, method: .get, parameters: parameter, encoding: JSONEncoding.default, headers: headers).responseJSON { (response) in
+            guard let httpStatusCode = response.response?.statusCode else {return}
             if response.result.isSuccess{
                 guard let data = response.data else {print("====>Can't get data from the server");return}
                 do {
                     let jsonResponse = try JSONDecoder().decode(T.self, from: data)
-                    completion(true,jsonResponse)
+                    completion(true,jsonResponse,httpStatusCode)
                 }catch{
                     print(error)
-                    completion(false,nil)
+                    completion(false,nil,httpStatusCode)
                 }
             }else{
-                var Errormessage = ""
-                if let httpStatusCode = response.response?.statusCode {
-                    switch httpStatusCode {
-                    case 422: Errormessage = ""
-                    case 444: Errormessage = ""
-                    case 401: Errormessage = "يجب تسجيل الدخول اولا"
-                    case 500: Errormessage = "ٌلا نستطيع السماحيه بالدخول"
-                    default:
-                        print("=============>>unknown Error")
-                    }
-                }
-                print("check your internet connection")
-                completion(false,nil)
+                 print("============>Error\(Error.self)")
+                completion(false,nil,httpStatusCode)
             }
         }
     }
     //////////////////////////////////////////////////////////////////////////////////////
- 
+    
 }

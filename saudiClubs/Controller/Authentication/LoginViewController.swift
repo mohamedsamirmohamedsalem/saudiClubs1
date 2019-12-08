@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var phoneNumberTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
+    var message:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,31 +49,46 @@ class LoginViewController: UIViewController {
                 let url = saudiBaseUrl + "/user/login"
                 let parameter = ["phone":phone, "password":password]
                 DispatchQueue.main.async {
-                    API.post(url, parameter: parameter, headers: nil) { (check, Response:LogInResponse?) in
-                        if check{
-                            
+                    API.post(url, parameter: parameter, headers: nil) { (check, Response:LogInResponse?,HttpStatusCode) in
+
                             guard let response = Response else {return}
-                            let statusCode = response
                             let MyID = response.data?.id
                             let ApiToken = response.data?.token
                             let isVerified = response.data?.isVerified
-                            
+                            let Mymessage = response.message
+                            let errorMessage = response.errors?.password
                             UserDefaults.standard.set(MyID , forKey: "myId")
                             UserDefaults.standard.synchronize()
                             UserDefaults.standard.set(ApiToken , forKey: "ApiToken")
                             UserDefaults.standard.synchronize()
                             UserDefaults.standard.set(isVerified , forKey: "isVerified")
                             UserDefaults.standard.synchronize()
-                            self.GoingToMainScreen()
-                        }else{
-                            
-                        }
+                            UserDefaults.standard.set(isVerified , forKey: "errorMessage")
+                            UserDefaults.standard.synchronize()
+
+                            print(HttpStatusCode)
+                            switch HttpStatusCode {
+                            case 200: self.GoingToMainScreen()
+                            self.PrintAlert()
+                            case 444: self.message = "هذاالكودغير صالح أو منهي الصلاحية"
+                            self.PrintAlert()
+                            case 401: self.message = Mymessage
+                            self.PrintAlert()
+                            self.PrintAlert()
+                            case 422,404:
+                                self.message = errorMessage?[1]
+                            self.PrintAlert()
+                            case 500: self.message = "لا نسطيع الاتصال بال خادم"
+                            self.PrintAlert()
+                            default:
+                                print("============>Status Code Not Identified")
+                            }
                     }
                 }
             }
         }
     }
-   
+    
     @IBAction func signUpButtton(_ sender: UIButton) {
         let stroyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
         present(stroyBoard, animated: true, completion: nil)
@@ -87,6 +103,9 @@ class LoginViewController: UIViewController {
     }
     
     func PrintAlert(){
- 
-     }
+        let alert = UIAlertController(title: "تحذير", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
 }

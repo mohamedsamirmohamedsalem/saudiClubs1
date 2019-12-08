@@ -17,4 +17,7 @@ class OnBoardCell: UICollectionViewCell {
         self.frame.size.width = SCREEN_WIDTH
          }
      }
+    
+    @IBOutlet var setViewsButton: UIButton!
+    
 }

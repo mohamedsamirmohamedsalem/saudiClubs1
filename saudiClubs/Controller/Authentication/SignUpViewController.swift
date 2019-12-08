@@ -10,6 +10,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+     var message:String?
     //MARK :- IBoutlets
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneTF: UITextField!
@@ -20,10 +21,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
-        
-    }
+   }
     //MARK :- IBActions
     @IBAction func loginAsVisitor(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabBarController") as! TabBarController
@@ -45,33 +43,46 @@ class SignUpViewController: UIViewController {
                 /////////////////////////////////////////
                 
                 DispatchQueue.main.async{
-                    print("sign up success")
                     let url = saudiBaseUrl + "/user/register"
                     let parameter = ["username":name, "password":password,"password_confirmation":confirmPassword ,"email":email ,"phone":phone]
-                    let header = ["lang":"ar"]
-                    print("1111")
-                    API.post(url, parameter: parameter, headers: nil) { (check, Response:RegisterResponse?) in
-                        if check{
-                            print("2222")
-                            guard let response = Response else {return}
-                            let message = response.message
-                            self.GoingToSecondScreen()
-                        }else{
-                            print("=========>false")
-        
-                        }
+                    API.post(url, parameter: parameter, headers: nil) { (check, Response:RegisterResponse?,HttpStatusCode) in
+                        print(HttpStatusCode)
+                        guard let response = Response else {print("Unable to get reponse");return}
+                           let signUpErrorPhone = response.errors?.phone?[1]
+                        let signUpErrorEmail = response.errors?.email?[1]
+                        print(signUpErrorEmail)
+                            switch HttpStatusCode {
+                            case 200:   self.GoingToSecondScreen()
+                            self.PrintAlert()
+                            case 444: self.message = "هذاالكودغير صالح أو منهي الصلاحية"
+                          //  self.PrintAlert()
+                            //case 401: self.message = Mymessage
+                            self.PrintAlert()
+                            self.PrintAlert()
+                            case 422,404:
+                                self.message = "hu"
+                                self.PrintAlert()
+                            case 500: self.message = "لا نسطيع الاتصال بال خادم"
+                            self.PrintAlert()
+                            default:
+                                print("============>Status Code Not Identified")
+                            }
                     }
                 }
                 
                 
             }else{
-            if name.isEmpty {
+                if name.count < 3 {
+                    PrintAlert("يجب أن يكون طول النص اسم المُستخدم ورقم الهاتف على الأقل 3 حروف")
+                }else if name.isEmpty {
                 nameTF.shake()
             }
             else if email.isEmpty{
                 emailTF.shake()
             }else if password.isEmpty{
                 passwordTF.shake()
+            }else if password.count < 8{
+                PrintAlert("يجب الا تقل كلمة المرور عن ٨ حروف")
             }else if confirmPassword.isEmpty{
                 ConfirmPasswordTF.shake()
             }else if phone.isEmpty {
@@ -103,6 +114,19 @@ class SignUpViewController: UIViewController {
     present(storyBoard, animated: true, completion: nil)
     }
     
+    
+    func PrintAlert(){
+          let alert = UIAlertController(title: "تحذير", message: message, preferredStyle: .alert)
+          let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+          alert.addAction(action)
+          self.present(alert, animated: true, completion: nil)
+      }
+    func PrintAlert(_ initialMessage:String){
+            let alert = UIAlertController(title: "تحذير", message: initialMessage, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
     //MARK :- methods
     //to check for validation of email
        class func isValidEmail(emailStr:String) -> Bool {

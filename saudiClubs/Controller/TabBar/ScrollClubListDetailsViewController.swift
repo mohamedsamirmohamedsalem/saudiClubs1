@@ -12,35 +12,41 @@ class ScrollClubListDetailsViewController: UIViewController {
     
     
     let images = [#imageLiteral(resourceName: "bank"), #imageLiteral(resourceName: "news_img"), #imageLiteral(resourceName: "user-img"), #imageLiteral(resourceName: "good-rate"), #imageLiteral(resourceName: "club-img")]
-   
-    
-    var currentIndex = 0
+   var currentIndex = 0
     var timer: Timer?
     
     // Outlets
-    @IBOutlet var BContainerView: UIView!
     @IBOutlet var ButtonCollectionView: UICollectionView!
+    @IBOutlet var sportsCollectionView: UICollectionView!
     @IBOutlet weak var Collection: UICollectionView!
+    
+    @IBOutlet var firstBottomView: UIView!
+    @IBOutlet var secondContainerView: UIView!
+    @IBOutlet var thirdContainerView: UIView!
+    @IBOutlet var fourthContainerView: UIView!
     
     @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        secondContainerView.isHidden = true
+        thirdContainerView.isHidden = true
+        fourthContainerView.isHidden = true
         pageControl.numberOfPages = 5
         
         //BContainerView.addSubview(FirstCellInDetails)
         title = "تطبيق الانديه السعوديه"    
         startTimer()
-
+        
     }
-
-  
+    
+    
     func startTimer()  {
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(go), userInfo: nil, repeats: true)
     }
     
     @objc func go()  {
-     
+        
         print("========")
         let scrollPosition = currentIndex < images.count - 1 ? currentIndex + 1 : 0
         
@@ -57,10 +63,12 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {
             return 4
-        }else {
-            return 4
-        
-        }
+        }else if collectionView.tag == 1{
+            return 5
+            
+        }else{  //collectionView.tag == 2
+                return 7
+            }
     }
     
     
@@ -70,11 +78,43 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
         if collectionView.tag == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnBoardCell", for: indexPath) as! OnBoardCell
             cell.ButOut.setTitle(cell.butContent[indexPath.row], for: .normal)
-           return cell
-        }else {
+            return cell
+        }else  if collectionView.tag == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newcell", for: indexPath) as! newcell
             cell.image_ = images[indexPath.row]
             return cell
+        }else{//collectionView.tag == 2
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Spoerts", for: indexPath) as! Spoerts
+                    return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == 0 {
+            UIView.animate(withDuration: 1.0) {
+                
+                if indexPath.row == 0 {
+                    self.firstBottomView.isHidden = false
+                    self.secondContainerView.isHidden = true
+                    self.thirdContainerView.isHidden = true
+                    self.fourthContainerView.isHidden = true
+                }else if indexPath.row == 1 {
+                 self.secondContainerView.isHidden = false
+                    self.firstBottomView.isHidden = true
+                    self.thirdContainerView.isHidden = true
+                    self.fourthContainerView.isHidden = true
+                }else if indexPath.row == 2 {
+                    self.firstBottomView.isHidden = true
+                    self.secondContainerView.isHidden = true
+                    self.thirdContainerView.isHidden = false
+                    self.fourthContainerView.isHidden = true
+                }else{
+                    self.firstBottomView.isHidden = true
+                    self.secondContainerView.isHidden = true
+                    self.thirdContainerView.isHidden = true
+                    self.fourthContainerView.isHidden = false
+                }
+            }
         }
     }
     
@@ -83,8 +123,10 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
         
         if collectionView.tag == 0 {
             return CGSize(width: ButtonCollectionView.frame.width/3 , height: 50)
+        }else  if collectionView.tag == 2{
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/5)
         }else{
-             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
         }
     }
     
@@ -93,11 +135,8 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
         if scrollView.tag == 1 {
             
             currentIndex = Int(scrollView.contentOffset.x / Collection.frame.width)
-            
-            
-            
             pageControl.currentPage = currentIndex
-            print(scrollView.contentOffset.x / Collection.frame.width)
+            //   print(scrollView.contentOffset.x / Collection.frame.width)
             timer?.invalidate()
             startTimer()
             
