@@ -30,17 +30,11 @@ class AppTermsViewController: UIViewController {
         UIView.animate(withDuration: 0.7) {
             if self.selectedButtton == 0 {
                   self.selectedButtton = 1
-                if let plusImage = UIImage(systemName: "plus.circle") {
-              //  self.showAnhHideLabelBut.setImage(plusImage, for: .normal)
-                }
                 self.AutoSizingViewConstrain.constant =  0.1 * SCREEN_HEIGHT
                 self.AutoHideAndShowLB.isHidden = false
                 
             }else{
                 self.selectedButtton = 0
-                if let minusImage = UIImage(systemName: "minus.circle") {
-              //  self.showAnhHideLabelBut.setImage(minusImage, for: .normal)
-                }
                 self.AutoSizingViewConstrain.constant = 0.009 *  SCREEN_HEIGHT
                 self.AutoSizingViewConstrain.constant =  self.AutoSizingViewConstrain.constant
                 self.AutoHideAndShowLB.isHidden = true
