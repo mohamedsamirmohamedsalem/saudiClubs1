@@ -16,6 +16,7 @@ class ScrollClubListDetailsViewController: UIViewController {
     var timer: Timer?
     
     // Outlets
+    @IBOutlet var AutoSizingViewConstrain: NSLayoutConstraint!
     @IBOutlet var ButtonCollectionView: UICollectionView!
     @IBOutlet var sportsCollectionView: UICollectionView!
     @IBOutlet weak var Collection: UICollectionView!
@@ -40,6 +41,9 @@ class ScrollClubListDetailsViewController: UIViewController {
         
     }
     
+    @IBAction func showAndHideLabel(_ sender: Any) {
+        
+    }
     
     func startTimer()  {
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(go), userInfo: nil, repeats: true)
@@ -66,8 +70,10 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
         }else if collectionView.tag == 1{
             return 5
             
-        }else{  //collectionView.tag == 2
-                return 7
+        }else if collectionView.tag == 2 {
+            return 7
+        } else{  //collectionView.tag == 3
+                return 2
             }
     }
     
@@ -83,9 +89,13 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newcell", for: indexPath) as! newcell
             cell.image_ = images[indexPath.row]
             return cell
-        }else{//collectionView.tag == 2
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Spoerts", for: indexPath) as! Spoerts
-                    return cell
+        }else  if collectionView.tag == 2 {
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Spoerts", for: indexPath) as! Spoerts
+               return cell
+            return cell
+        }else{//collectionView.tag == 3
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClubNewsCollectionViewCell", for: indexPath) as! ClubNewsCollectionViewCell
+                              return cell
         }
     }
     
