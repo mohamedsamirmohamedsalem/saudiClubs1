@@ -72,7 +72,9 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
             
         }else if collectionView.tag == 2 {
             return 7
-        } else{  //collectionView.tag == 3
+        }else if collectionView.tag == 3 {
+            return 2
+        } else{  //collectionView.tag == 4
                 return 2
             }
     }
@@ -93,9 +95,12 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Spoerts", for: indexPath) as! Spoerts
                return cell
             return cell
-        }else{//collectionView.tag == 3
+        }else if collectionView.tag == 3 {//collectionView.tag == 3
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClubNewsCollectionViewCell", for: indexPath) as! ClubNewsCollectionViewCell
                               return cell
+        }else{//collectionView.tag == 4
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActivitiesCollectionViewCell", for: indexPath) as! ActivitiesCollectionViewCell
+          return cell
         }
     }
     
@@ -135,6 +140,8 @@ extension ScrollClubListDetailsViewController: UICollectionViewDataSource, UICol
             return CGSize(width: ButtonCollectionView.frame.width/3 , height: 50)
         }else  if collectionView.tag == 2{
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/5)
+        }else  if collectionView.tag == 3{
+            return CGSize(width: ButtonCollectionView.frame.width, height: collectionView.frame.height)
         }else{
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
         }
